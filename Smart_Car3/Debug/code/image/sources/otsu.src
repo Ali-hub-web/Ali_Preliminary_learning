@@ -1,0 +1,645 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc28860a --dep-file=code/image/sources/otsu.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\infineon\\\\Project\\\\Smart_Car3 -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\control -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\device -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\image -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\image\\\\include -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\image\\\\include\\\\threshold -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\system -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\zf_common -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\zf_components -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\zf_device -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\zf_driver -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/image/sources/otsu.src ../code/image/sources/otsu.c"
+	.compiler_name		"ctc"
+	;source	'../code/image/sources/otsu.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.otsu.nvision_gray_threshold_otsu',code,cluster('nvision_gray_threshold_otsu')
+	.sect	'.text.otsu.nvision_gray_threshold_otsu'
+	.align	2
+	
+	.global	nvision_gray_threshold_otsu
+; Function nvision_gray_threshold_otsu
+.L16:
+nvision_gray_threshold_otsu:	.type	func
+	lea	a10,[a10]-512
+.L53:
+	ld.h	d0,[a4]
+.L55:
+	ld.h	d15,[a4]2
+.L57:
+	ld.a	a15,[a4]4
+.L59:
+	movh.a	a2,#@his(.1.ini)
+	lea	a2,[a2]@los(.1.ini)
+	lea	a2,[a2]0
+.L85:
+	lea	a4,[a10]0
+.L54:
+	lea	a5,127
+.L2:
+	ld.w	d1,[a2+]
+	st.w	[a4+],d1
+	loop	a5,.L2
+.L86:
+	mul	d0,d15
+.L56:
+	extr.u	d2,d0,#0,#16
+.L60:
+	mov	d15,#0
+.L58:
+	j	.L3
+.L4:
+	addsc.a	a2,a15,d15,#0
+	ld.bu	d0,[a2]
+.L87:
+	mul	d0,d0,#2
+	addsc.a	a2,a10,d0,#0
+.L88:
+	addsc.a	a4,a15,d15,#0
+	ld.bu	d0,[a4]
+.L89:
+	mul	d0,d0,#2
+	addsc.a	a4,a10,d0,#0
+	ld.hu	d0,[a4]0
+.L90:
+	add	d0,#1
+	st.h	[a2],d0
+.L91:
+	add	d0,d15,#1
+	extr.u	d15,d0,#0,#16
+.L3:
+	jlt.u	d15,d2,.L4
+.L40:
+	mov	d3,#0
+.L63:
+	mov	d1,#0
+.L62:
+	j	.L5
+.L6:
+	mul	d15,d1,#2
+	addsc.a	a15,a10,d15,#0
+	ld.hu	d0,[a15]0
+.L92:
+	mul	d0,d1
+	itof	d0,d0
+.L93:
+	add.f	d3,d3,d0
+.L94:
+	add	d1,#1
+.L5:
+	mov	d0,#256
+.L95:
+	jlt.u	d1,d0,.L6
+.L43:
+	mov	d7,#0
+.L65:
+	mov	d0,#0
+.L66:
+	mov	d6,#0
+.L68:
+	mov	d5,#0
+.L69:
+	mov	d4,#0
+.L64:
+	j	.L7
+.L8:
+	mul	d15,d4,#2
+	addsc.a	a15,a10,d15,#0
+	ld.hu	d15,[a15]0
+.L96:
+	add	d0,d15
+.L67:
+	extr.u	d0,d0,#0,#16
+.L70:
+	jne	d0,#0,.L9
+.L97:
+	j	.L10
+.L9:
+	sub	d15,d2,d0
+	extr.u	d10,d15,#0,#16
+.L71:
+	jne	d10,#0,.L11
+.L98:
+	j	.L12
+.L11:
+	mul	d15,d4,#2
+	addsc.a	a15,a10,d15,#0
+	ld.hu	d1,[a15]0
+.L99:
+	mul	d1,d4
+	itof	d1,d1
+.L100:
+	add.f	d7,d7,d1
+.L49:
+	utof	d1,d0
+.L101:
+	div.f	d1,d7,d1
+.L73:
+	sub.f	d8,d3,d7
+.L102:
+	utof	d9,d10
+.L103:
+	div.f	d15,d8,d9
+.L75:
+	mul	d10,d0
+.L72:
+	itof	d8,d10
+.L104:
+	sub.f	d9,d1,d15
+.L105:
+	mul.f	d8,d8,d9
+.L106:
+	sub.f	d15,d1,d15
+.L76:
+	mul.f	d1,d8,d15
+.L74:
+	cmp.f	d15,d1,d6
+	extr.u	d15,d15,#2,#1
+.L107:
+	jeq	d15,#0,.L13
+.L108:
+	mov	d6,d1
+.L109:
+	mov	d5,d4
+.L13:
+.L10:
+	add	d4,#1
+.L7:
+	mov	d15,#256
+.L110:
+	jlt.u	d4,d15,.L8
+.L12:
+	mov	d2,d5
+.L61:
+	j	.L14
+.L14:
+	ret
+.L27:
+	
+__nvision_gray_threshold_otsu_function_end:
+	.size	nvision_gray_threshold_otsu,__nvision_gray_threshold_otsu_function_end-nvision_gray_threshold_otsu
+.L25:
+	; End of function
+	
+	.sdecl	'.rodata.otsu..1.ini',data,rom
+	.sect	'.rodata.otsu..1.ini'
+	.align	2
+.1.ini:	.type	object
+	.size	.1.ini,512
+	.space	512
+	.calls	'nvision_gray_threshold_otsu','',512
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L18:
+	.word	659
+	.half	3
+	.word	.L19
+	.byte	4
+.L17:
+	.byte	1
+	.byte	'../code/image/sources/otsu.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L20
+.L26:
+	.byte	2
+	.byte	'unsigned char',0,1,8
+.L30:
+	.byte	2
+	.byte	'short int',0,2,5
+.L33:
+	.byte	3
+	.word	162
+	.byte	4
+	.byte	'nvision_gray_image',0,1,133,1,8,8,5
+	.byte	'width',0
+	.word	179
+	.byte	2,2,35,0,5
+	.byte	'height',0
+	.word	179
+	.byte	2,2,35,2,5
+	.byte	'data',0
+	.word	192
+	.byte	4,2,35,4,0
+.L28:
+	.byte	3
+	.word	197
+.L37:
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L35:
+	.byte	6,128,4
+	.word	273
+	.byte	7,255,1,0
+.L41:
+	.byte	2
+	.byte	'float',0,4,4,8,1,3
+	.word	315
+	.byte	9
+	.byte	'__codeptr',0,2,1,1
+	.word	317
+	.byte	2
+	.byte	'int',0,4,5,9
+	.byte	'__intptr_t',0,2,1,1
+	.word	340
+	.byte	2
+	.byte	'unsigned int',0,4,7,9
+	.byte	'__uintptr_t',0,2,1,1
+	.word	366
+	.byte	9
+	.byte	'uint8_t',0,3,242,1,41
+	.word	162
+	.byte	9
+	.byte	'int16_t',0,3,245,1,41
+	.word	179
+	.byte	4
+	.byte	'nvision_rgb888',0,1,77,8,4,5
+	.byte	'red',0
+	.word	162
+	.byte	1,2,35,0,5
+	.byte	'green',0
+	.word	162
+	.byte	1,2,35,1,5
+	.byte	'blue',0
+	.word	162
+	.byte	1,2,35,2,0,9
+	.byte	'nvision_rgb888_t',0,1,83,31
+	.word	436
+	.byte	4
+	.byte	'nvision_hsl',0,1,89,8,12,5
+	.byte	'hue',0
+	.word	306
+	.byte	4,2,35,0,5
+	.byte	'saturation',0
+	.word	306
+	.byte	4,2,35,4,5
+	.byte	'lightness',0
+	.word	306
+	.byte	4,2,35,8,0,9
+	.byte	'nvision_hsl_t',0,1,95,28
+	.word	524
+	.byte	9
+	.byte	'nvision_gray_t',0,1,101,17
+	.word	162
+	.byte	9
+	.byte	'nvision_size_t',0,1,107,17
+	.word	179
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L19:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,15,0,73,19,0,0,4,19,1,3,8,58
+	.byte	15,59,15,57,15,11,15,0,0,5,13,0,3,8,73,19,11,15,56,9,0,0,6,1,1,11,15,73,19,0,0,7,33,0,47,15,0,0,8,21,0
+	.byte	54,15,0,0,9,22,0,3,8,58,15,59,15,57,15,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L20:
+	.word	.L78-.L77
+.L77:
+	.half	3
+	.word	.L80-.L79
+.L79:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\image\\\\include',0
+	.byte	'D:\\infineon\\das64\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0,0
+	.byte	'nvision.h',0,1,0,0
+	.byte	'../code/image/sources/otsu.c',0,0,0,0
+	.byte	'stdint.h',0,2,0,0,0
+.L80:
+.L78:
+	.sdecl	'.debug_info',debug,cluster('nvision_gray_threshold_otsu')
+	.sect	'.debug_info'
+.L21:
+	.word	543
+	.half	3
+	.word	.L22
+	.byte	4,1
+	.byte	'../code/image/sources/otsu.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L24,.L23
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'nvision_gray_threshold_otsu',0,1,17,1
+	.word	.L26
+	.byte	1,1,1
+	.word	.L16,.L27,.L15
+	.byte	4
+	.byte	'gray_image',0,1,17,56
+	.word	.L28,.L29
+	.byte	5
+	.word	.L16,.L27
+	.byte	6
+	.byte	'width',0,1,18,20
+	.word	.L30,.L31
+	.byte	6
+	.byte	'height',0,1,19,20
+	.word	.L30,.L32
+	.byte	6
+	.byte	'data',0,1,20,21
+	.word	.L33,.L34
+	.byte	6
+	.byte	'hist',0,1,22,14
+	.word	.L35,.L36
+	.byte	6
+	.byte	'total',0,1,23,14
+	.word	.L37,.L38
+	.byte	6
+	.byte	'i',0,1,25,14
+	.word	.L37,.L39
+	.byte	5
+	.word	.L40,.L27
+	.byte	6
+	.byte	'sum',0,1,31,11
+	.word	.L41,.L42
+	.byte	5
+	.word	.L43,.L27
+	.byte	6
+	.byte	'sumB',0,1,36,11
+	.word	.L41,.L44
+	.byte	6
+	.byte	'wB',0,1,37,14
+	.word	.L37,.L45
+	.byte	6
+	.byte	'wF',0,1,38,14
+	.word	.L37,.L46
+	.byte	6
+	.byte	'varMax',0,1,40,11
+	.word	.L41,.L47
+	.byte	6
+	.byte	'threshold',0,1,41,20
+	.word	.L26,.L48
+	.byte	5
+	.word	.L49,.L10
+	.byte	6
+	.byte	'mB',0,1,56,15
+	.word	.L41,.L50
+	.byte	6
+	.byte	'mF',0,1,57,15
+	.word	.L41,.L51
+	.byte	6
+	.byte	'varBetween',0,1,59,15
+	.word	.L41,.L52
+	.byte	0,0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_gray_threshold_otsu')
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_gray_threshold_otsu')
+	.sect	'.debug_line'
+.L23:
+	.word	.L82-.L81
+.L81:
+	.half	3
+	.word	.L84-.L83
+.L83:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/otsu.c',0,0,0,0,0
+.L84:
+	.byte	5,1,7,0,5,2
+	.word	.L16
+	.byte	3,16,1,5,38,9
+	.half	.L53-.L16
+	.byte	3,1,1,5,39,9
+	.half	.L55-.L53
+	.byte	3,1,1,5,38,9
+	.half	.L57-.L55
+	.byte	3,1,1,5,26,9
+	.half	.L59-.L57
+	.byte	3,2,1,5,24,9
+	.half	.L85-.L59
+	.byte	1,5,28,9
+	.half	.L86-.L85
+	.byte	3,1,1,5,12,9
+	.half	.L60-.L86
+	.byte	3,4,1,5,26,9
+	.half	.L58-.L60
+	.byte	1,5,18,9
+	.half	.L4-.L58
+	.byte	3,1,1,5,13,9
+	.half	.L87-.L4
+	.byte	1,5,18,9
+	.half	.L88-.L87
+	.byte	1,5,13,9
+	.half	.L89-.L88
+	.byte	1,5,22,9
+	.half	.L90-.L89
+	.byte	1,5,29,9
+	.half	.L91-.L90
+	.byte	3,127,1,5,26,9
+	.half	.L3-.L91
+	.byte	1,5,15,7,9
+	.half	.L40-.L3
+	.byte	3,4,1,5,12,9
+	.half	.L63-.L40
+	.byte	3,1,1,5,24,9
+	.half	.L62-.L63
+	.byte	1,9
+	.half	.L6-.L62
+	.byte	3,1,1,5,18,9
+	.half	.L92-.L6
+	.byte	1,5,13,9
+	.half	.L93-.L92
+	.byte	1,5,27,9
+	.half	.L94-.L93
+	.byte	3,127,1,5,21,9
+	.half	.L5-.L94
+	.byte	1,5,24,9
+	.half	.L95-.L5
+	.byte	1,5,16,7,9
+	.half	.L43-.L95
+	.byte	3,4,1,5,17,9
+	.half	.L65-.L43
+	.byte	3,1,1,5,18,9
+	.half	.L66-.L65
+	.byte	3,3,1,5,30,9
+	.half	.L68-.L66
+	.byte	3,1,1,5,12,9
+	.half	.L69-.L68
+	.byte	3,2,1,5,24,9
+	.half	.L64-.L69
+	.byte	1,5,19,9
+	.half	.L8-.L64
+	.byte	3,1,1,5,12,9
+	.half	.L96-.L8
+	.byte	1,5,9,9
+	.half	.L70-.L96
+	.byte	3,1,1,5,13,7,9
+	.half	.L97-.L70
+	.byte	3,1,1,5,20,9
+	.half	.L9-.L97
+	.byte	3,3,1,5,9,9
+	.half	.L71-.L9
+	.byte	3,1,1,5,13,7,9
+	.half	.L98-.L71
+	.byte	3,1,1,5,25,9
+	.half	.L11-.L98
+	.byte	3,3,1,5,19,9
+	.half	.L99-.L11
+	.byte	1,5,14,9
+	.half	.L100-.L99
+	.byte	1,5,27,9
+	.half	.L49-.L100
+	.byte	3,2,1,5,25,9
+	.half	.L101-.L49
+	.byte	1,9
+	.half	.L73-.L101
+	.byte	3,1,1,5,35,9
+	.half	.L102-.L73
+	.byte	1,5,33,9
+	.half	.L103-.L102
+	.byte	1,5,31,9
+	.half	.L75-.L103
+	.byte	3,2,1,5,42,9
+	.half	.L104-.L75
+	.byte	1,5,36,9
+	.half	.L105-.L104
+	.byte	1,5,54,9
+	.half	.L106-.L105
+	.byte	1,5,48,9
+	.half	.L76-.L106
+	.byte	1,5,24,9
+	.half	.L74-.L76
+	.byte	3,2,1,5,9,9
+	.half	.L107-.L74
+	.byte	1,5,20,7,9
+	.half	.L108-.L107
+	.byte	3,1,1,5,23,9
+	.half	.L109-.L108
+	.byte	3,1,1,5,27,9
+	.half	.L10-.L109
+	.byte	3,108,1,5,21,9
+	.half	.L7-.L10
+	.byte	1,5,24,9
+	.half	.L110-.L7
+	.byte	1,5,5,7,9
+	.half	.L12-.L110
+	.byte	3,25,1,5,1,9
+	.half	.L14-.L12
+	.byte	3,1,1,7,9
+	.half	.L25-.L14
+	.byte	0,1,1
+.L82:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_gray_threshold_otsu')
+	.sect	'.debug_ranges'
+.L24:
+	.word	-1,.L16,0,.L25-.L16,0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_gray_threshold_otsu')
+	.sect	'.debug_loc'
+.L34:
+	.word	-1,.L16,.L59-.L16,.L6-.L16
+	.half	1
+	.byte	111
+	.word	0,0
+.L29:
+	.word	-1,.L16,0,.L54-.L16
+	.half	1
+	.byte	100
+	.word	0,0
+.L32:
+	.word	-1,.L16,.L57-.L16,.L58-.L16
+	.half	1
+	.byte	95
+	.word	0,0
+.L36:
+	.word	-1,.L16,0,.L27-.L16
+	.half	3
+	.byte	145,128,124
+	.word	0,0
+.L39:
+	.word	-1,.L16,.L58-.L16,.L62-.L16
+	.half	1
+	.byte	95
+	.word	.L62-.L16,.L64-.L16
+	.half	1
+	.byte	81
+	.word	.L64-.L16,.L27-.L16
+	.half	1
+	.byte	84
+	.word	0,0
+.L50:
+	.word	-1,.L16,.L73-.L16,.L74-.L16
+	.half	1
+	.byte	81
+	.word	0,0
+.L51:
+	.word	-1,.L16,.L75-.L16,.L76-.L16
+	.half	1
+	.byte	95
+	.word	0,0
+.L15:
+	.word	-1,.L16,0,.L53-.L16
+	.half	2
+	.byte	138,0
+	.word	.L53-.L16,.L27-.L16
+	.half	3
+	.byte	138,128,4
+	.word	.L27-.L16,.L27-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L42:
+	.word	-1,.L16,.L63-.L16,.L27-.L16
+	.half	1
+	.byte	83
+	.word	0,0
+.L44:
+	.word	-1,.L16,.L65-.L16,.L27-.L16
+	.half	1
+	.byte	87
+	.word	0,0
+.L48:
+	.word	-1,.L16,.L69-.L16,.L27-.L16
+	.half	1
+	.byte	85
+	.word	.L61-.L16,.L27-.L16
+	.half	1
+	.byte	82
+	.word	0,0
+.L38:
+	.word	-1,.L16,.L60-.L16,.L61-.L16
+	.half	1
+	.byte	82
+	.word	0,0
+.L52:
+	.word	-1,.L16,.L74-.L16,.L10-.L16
+	.half	1
+	.byte	81
+	.word	0,0
+.L47:
+	.word	-1,.L16,.L68-.L16,.L27-.L16
+	.half	1
+	.byte	86
+	.word	0,0
+.L45:
+	.word	-1,.L16,.L66-.L16,.L67-.L16
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L70-.L16,.L27-.L16
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L46:
+	.word	-1,.L16,.L71-.L16,.L72-.L16
+	.half	1
+	.byte	90
+	.word	0,0
+.L31:
+	.word	-1,.L16,.L55-.L16,.L56-.L16
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L111:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('nvision_gray_threshold_otsu')
+	.sect	'.debug_frame'
+	.word	44
+	.word	.L111,.L16,.L27-.L16
+	.byte	8,19,8,22,8,23,4
+	.word	(.L53-.L16)/2
+	.byte	19,128,4,22,26,4,19,138,128,4,4
+	.word	(.L27-.L53)/2
+	.byte	19,0,8,26,0,0
+	; Module end

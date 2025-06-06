@@ -1,0 +1,2472 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc23136a --dep-file=code/image/sources/core.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\infineon\\\\Project\\\\Smart_Car3 -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\control -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\device -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\image -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\image\\\\include -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\image\\\\include\\\\threshold -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\system -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\zf_common -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\zf_components -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\zf_device -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\libraries\\\\zf_driver -ID:\\\\infineon\\\\Project\\\\Smart_Car3\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/image/sources/core.src ../code/image/sources/core.c"
+	.compiler_name		"ctc"
+	;source	'../code/image/sources/core.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.core.nvision_image_create_rgb_from_buffer',code,cluster('nvision_image_create_rgb_from_buffer')
+	.sect	'.text.core.nvision_image_create_rgb_from_buffer'
+	.align	2
+	
+	.global	nvision_image_create_rgb_from_buffer
+; Function nvision_image_create_rgb_from_buffer
+.L47:
+nvision_image_create_rgb_from_buffer:	.type	func
+	st.a	[a4]4,a5
+.L265:
+	st.h	[a4],d4
+.L266:
+	st.h	[a4]2,d5
+.L267:
+	ret
+.L141:
+	
+__nvision_image_create_rgb_from_buffer_function_end:
+	.size	nvision_image_create_rgb_from_buffer,__nvision_image_create_rgb_from_buffer_function_end-nvision_image_create_rgb_from_buffer
+.L80:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_image_create_hsl_from_buffer',code,cluster('nvision_image_create_hsl_from_buffer')
+	.sect	'.text.core.nvision_image_create_hsl_from_buffer'
+	.align	2
+	
+	.global	nvision_image_create_hsl_from_buffer
+; Function nvision_image_create_hsl_from_buffer
+.L49:
+nvision_image_create_hsl_from_buffer:	.type	func
+	st.a	[a4]4,a5
+.L272:
+	st.h	[a4],d4
+.L273:
+	st.h	[a4]2,d5
+.L274:
+	ret
+.L151:
+	
+__nvision_image_create_hsl_from_buffer_function_end:
+	.size	nvision_image_create_hsl_from_buffer,__nvision_image_create_hsl_from_buffer_function_end-nvision_image_create_hsl_from_buffer
+.L85:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_image_create_gray_from_buffer',code,cluster('nvision_image_create_gray_from_buffer')
+	.sect	'.text.core.nvision_image_create_gray_from_buffer'
+	.align	2
+	
+	.global	nvision_image_create_gray_from_buffer
+; Function nvision_image_create_gray_from_buffer
+.L51:
+nvision_image_create_gray_from_buffer:	.type	func
+	st.a	[a4]4,a5
+.L279:
+	st.h	[a4],d4
+.L280:
+	st.h	[a4]2,d5
+.L281:
+	ret
+.L158:
+	
+__nvision_image_create_gray_from_buffer_function_end:
+	.size	nvision_image_create_gray_from_buffer,__nvision_image_create_gray_from_buffer_function_end-nvision_image_create_gray_from_buffer
+.L90:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_color_rgb_to_hsl',code,cluster('nvision_color_rgb_to_hsl')
+	.sect	'.text.core.nvision_color_rgb_to_hsl'
+	.align	2
+	
+	.global	nvision_color_rgb_to_hsl
+; Function nvision_color_rgb_to_hsl
+.L53:
+nvision_color_rgb_to_hsl:	.type	func
+	mov.aa	a15,a5
+.L219:
+	ld.bu	d15,[a4]
+	utof	d15,d15
+.L301:
+	movh	d0,#17279
+.L302:
+	div.f	d8,d15,d0
+.L220:
+	ld.bu	d15,[a4]1
+	utof	d15,d15
+.L303:
+	movh	d0,#17279
+.L304:
+	div.f	d9,d15,d0
+.L221:
+	ld.bu	d15,[a4]2
+	utof	d15,d15
+.L305:
+	movh	d0,#17279
+.L306:
+	div.f	d11,d15,d0
+.L222:
+	mov	e4,d11,d9
+	call	fmaxf
+.L218:
+	mov	e4,d2,d8
+	call	fmaxf
+.L223:
+	mov	d10,d2
+.L225:
+	mov	e4,d11,d9
+	call	fminf
+.L224:
+	mov	e4,d2,d8
+	call	fminf
+.L226:
+	sub.f	d1,d10,d2
+.L227:
+	mov	d0,#0
+.L228:
+	cmp.f	d15,d8,d10
+	extr.u	d15,d15,#1,#1
+.L307:
+	jeq	d15,#0,.L2
+.L308:
+	sub.f	d15,d9,d11
+.L309:
+	div.f	d0,d15,d1
+.L310:
+	j	.L3
+.L2:
+	cmp.f	d15,d9,d10
+	extr.u	d15,d15,#1,#1
+.L311:
+	jeq	d15,#0,.L4
+.L312:
+	sub.f	d15,d11,d8
+.L313:
+	div.f	d15,d15,d1
+.L314:
+	movh	d0,#16384
+.L229:
+	add.f	d0,d15,d0
+.L230:
+	j	.L5
+.L4:
+	cmp.f	d15,d11,d10
+	extr.u	d15,d15,#1,#1
+.L315:
+	jeq	d15,#0,.L6
+.L316:
+	sub.f	d15,d8,d9
+.L317:
+	div.f	d15,d15,d1
+.L318:
+	movh	d0,#16512
+.L231:
+	add.f	d0,d15,d0
+.L6:
+.L5:
+.L3:
+	movh	d15,#17008
+.L319:
+	mul.f	d0,d0,d15
+.L320:
+	mov	d15,#0
+.L321:
+	cmp.f	d15,d0,d15
+	extr.u	d15,d15,#0,#1
+.L322:
+	jeq	d15,#0,.L7
+.L323:
+	movh	d15,#17332
+.L324:
+	add.f	d0,d0,d15
+.L7:
+	st.w	[a15],d0
+.L325:
+	extr.u	d15,d10,#23,#8
+	jeq	d15,#0,.L8
+.L326:
+	div.f	d15,d1,d10
+.L327:
+	j	.L9
+.L8:
+	mov	d15,#0
+.L9:
+	st.w	[a15]4,d15
+.L328:
+	add.f	d15,d10,d2
+.L329:
+	movh	d0,#16384
+.L232:
+	div.f	d15,d15,d0
+.L330:
+	st.w	[a15]8,d15
+.L331:
+	ret
+.L174:
+	
+__nvision_color_rgb_to_hsl_function_end:
+	.size	nvision_color_rgb_to_hsl,__nvision_color_rgb_to_hsl_function_end-nvision_color_rgb_to_hsl
+.L110:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_color_rgb_to_gray',code,cluster('nvision_color_rgb_to_gray')
+	.sect	'.text.core.nvision_color_rgb_to_gray'
+	.align	2
+	
+	.global	nvision_color_rgb_to_gray
+; Function nvision_color_rgb_to_gray
+.L55:
+nvision_color_rgb_to_gray:	.type	func
+	ld.bu	d0,[a4]
+.L336:
+	ld.bu	d15,[a4]1
+.L337:
+	add	d0,d15
+.L338:
+	ld.bu	d15,[a4]2
+.L339:
+	add	d0,d15
+.L340:
+	mov	d15,#3
+.L341:
+	div	e0,d0,d15
+.L342:
+	st.b	[a5],d0
+.L343:
+	ret
+.L185:
+	
+__nvision_color_rgb_to_gray_function_end:
+	.size	nvision_color_rgb_to_gray,__nvision_color_rgb_to_gray_function_end-nvision_color_rgb_to_gray
+.L115:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_color_hsl_in_range',code,cluster('nvision_color_hsl_in_range')
+	.sect	'.text.core.nvision_color_hsl_in_range'
+	.align	2
+	
+	.global	nvision_color_hsl_in_range
+; Function nvision_color_hsl_in_range
+.L57:
+nvision_color_hsl_in_range:	.type	func
+	ld.w	d15,[a5]
+.L348:
+	extr.u	d15,d15,#23,#8
+	ne	d15,d15,#0
+.L349:
+	jeq	d15,#0,.L10
+.L350:
+	ld.w	d15,[a4]
+	ld.w	d0,[a5]
+	cmp.f	d15,d15,d0
+	and	d15,#6
+	ne	d15,d15,#0
+	jeq	d15,#0,.L11
+	ld.w	d15,[a4]
+	ld.w	d0,[a6]
+	cmp.f	d15,d15,d0
+	and	d15,#3
+	ne	d15,d15,#0
+	jne	d15,#0,.L12
+.L11:
+	ld.w	d15,[a4]
+	ld.w	d0,[a6]
+	cmp.f	d15,d15,d0
+	and	d15,#6
+	ne	d15,d15,#0
+	jeq	d15,#0,.L13
+	ld.w	d15,[a4]
+	ld.w	d0,[a5]
+	cmp.f	d15,d15,d0
+	and	d15,#3
+	ne	d15,d15,#0
+	jne	d15,#0,.L14
+.L13:
+	mov	d2,#0
+.L351:
+	j	.L15
+.L14:
+.L12:
+.L10:
+	ld.w	d15,[a5]4
+.L352:
+	extr.u	d15,d15,#23,#8
+	ne	d15,d15,#0
+.L353:
+	jeq	d15,#0,.L16
+.L354:
+	ld.w	d15,[a4]4
+	ld.w	d0,[a5]4
+	cmp.f	d15,d15,d0
+	and	d15,#6
+	ne	d15,d15,#0
+	jeq	d15,#0,.L17
+	ld.w	d15,[a4]4
+	ld.w	d0,[a6]4
+	cmp.f	d15,d15,d0
+	and	d15,#3
+	ne	d15,d15,#0
+	jne	d15,#0,.L18
+.L17:
+	ld.w	d15,[a4]4
+	ld.w	d0,[a6]4
+	cmp.f	d15,d15,d0
+	and	d15,#6
+	ne	d15,d15,#0
+	jeq	d15,#0,.L19
+	ld.w	d15,[a4]4
+	ld.w	d0,[a5]4
+	cmp.f	d15,d15,d0
+	and	d15,#3
+	ne	d15,d15,#0
+	jne	d15,#0,.L20
+.L19:
+	mov	d2,#0
+.L355:
+	j	.L21
+.L20:
+.L18:
+.L16:
+	ld.w	d15,[a5]8
+.L356:
+	extr.u	d15,d15,#23,#8
+	ne	d15,d15,#0
+.L357:
+	jeq	d15,#0,.L22
+.L358:
+	ld.w	d15,[a4]8
+	ld.w	d0,[a5]8
+	cmp.f	d15,d15,d0
+	and	d15,#6
+	ne	d15,d15,#0
+	jeq	d15,#0,.L23
+	ld.w	d15,[a4]8
+	ld.w	d0,[a6]8
+	cmp.f	d15,d15,d0
+	and	d15,#3
+	ne	d15,d15,#0
+	jne	d15,#0,.L24
+.L23:
+	ld.w	d15,[a4]8
+	ld.w	d0,[a6]8
+	cmp.f	d15,d15,d0
+	and	d15,#6
+	ne	d15,d15,#0
+	jeq	d15,#0,.L25
+	ld.w	d15,[a4]8
+	ld.w	d0,[a5]8
+	cmp.f	d15,d15,d0
+	and	d15,#3
+	ne	d15,d15,#0
+	jne	d15,#0,.L26
+.L25:
+	mov	d2,#0
+.L359:
+	j	.L27
+.L26:
+.L24:
+.L22:
+	mov	d2,#1
+.L360:
+	j	.L28
+.L28:
+.L27:
+.L21:
+.L15:
+	ret
+.L189:
+	
+__nvision_color_hsl_in_range_function_end:
+	.size	nvision_color_hsl_in_range,__nvision_color_hsl_in_range_function_end-nvision_color_hsl_in_range
+.L120:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_image_rgb_to_hsl',code,cluster('nvision_image_rgb_to_hsl')
+	.sect	'.text.core.nvision_image_rgb_to_hsl'
+	.align	2
+	
+	.global	nvision_image_rgb_to_hsl
+; Function nvision_image_rgb_to_hsl
+.L59:
+nvision_image_rgb_to_hsl:	.type	func
+	mov.aa	a15,a4
+.L233:
+	mov.aa	a12,a5
+.L234:
+	mov	d8,#0
+.L235:
+	j	.L29
+.L30:
+	mul	d15,d8,#4
+.L365:
+	ld.a	a2,[a15]4
+.L366:
+	addsc.a	a4,a2,d15,#0
+.L367:
+	mul	d15,d8,#12
+.L368:
+	ld.a	a2,[a12]4
+.L369:
+	addsc.a	a5,a2,d15,#0
+	call	nvision_color_rgb_to_hsl
+.L370:
+	add	d8,#1
+.L236:
+	extr.u	d8,d8,#0,#16
+.L29:
+	ld.h	d0,[a15]
+.L371:
+	ld.h	d15,[a15]2
+.L372:
+	mul	d0,d15
+.L373:
+	jlt	d8,d0,.L30
+.L374:
+	ret
+.L193:
+	
+__nvision_image_rgb_to_hsl_function_end:
+	.size	nvision_image_rgb_to_hsl,__nvision_image_rgb_to_hsl_function_end-nvision_image_rgb_to_hsl
+.L125:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_image_rgb_to_gray',code,cluster('nvision_image_rgb_to_gray')
+	.sect	'.text.core.nvision_image_rgb_to_gray'
+	.align	2
+	
+	.global	nvision_image_rgb_to_gray
+; Function nvision_image_rgb_to_gray
+.L61:
+nvision_image_rgb_to_gray:	.type	func
+	mov.aa	a15,a4
+.L237:
+	mov.aa	a12,a5
+.L238:
+	mov	d8,#0
+.L239:
+	j	.L31
+.L32:
+	mul	d15,d8,#4
+.L379:
+	ld.a	a2,[a15]4
+.L380:
+	addsc.a	a4,a2,d15,#0
+.L381:
+	ld.a	a2,[a12]4
+.L382:
+	addsc.a	a5,a2,d8,#0
+	call	nvision_color_rgb_to_gray
+.L383:
+	add	d8,#1
+.L240:
+	extr.u	d8,d8,#0,#16
+.L31:
+	ld.h	d0,[a15]
+.L384:
+	ld.h	d15,[a15]2
+.L385:
+	mul	d0,d15
+.L386:
+	jlt	d8,d0,.L32
+.L387:
+	ret
+.L197:
+	
+__nvision_image_rgb_to_gray_function_end:
+	.size	nvision_image_rgb_to_gray,__nvision_image_rgb_to_gray_function_end-nvision_image_rgb_to_gray
+.L130:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_image_gray_threshold',code,cluster('nvision_image_gray_threshold')
+	.sect	'.text.core.nvision_image_gray_threshold'
+	.align	2
+	
+	.global	nvision_image_gray_threshold
+; Function nvision_image_gray_threshold
+.L63:
+nvision_image_gray_threshold:	.type	func
+	mov.aa	a15,a4
+.L242:
+	mov	d8,d4
+.L243:
+	mov	d15,d5
+.L245:
+	mov.aa	a4,a15
+	call	nvision_image_gray_raw
+.L241:
+	mov.aa	a12,a2
+.L247:
+	mov	d9,#255
+.L248:
+	mov	d10,#0
+.L249:
+	jz.t	d15:1,.L33
+.L392:
+	mov	d9,#0
+.L393:
+	mov	d10,#255
+.L33:
+	jz.t	d15:8,.L34
+.L394:
+	mov.aa	a4,a15
+.L250:
+	call	nvision_gray_threshold_otsu
+.L244:
+	mov	d8,d2
+.L34:
+	mov	d15,#0
+.L246:
+	j	.L35
+.L36:
+	addsc.a	a2,a12,d15,#0
+	ld.bu	d0,[a2]
+.L395:
+	jge.u	d8,d0,.L37
+.L396:
+	addsc.a	a2,a12,d15,#0
+.L397:
+	st.b	[a2],d9
+.L398:
+	j	.L38
+.L37:
+	addsc.a	a2,a12,d15,#0
+.L399:
+	st.b	[a2],d10
+.L38:
+	add	d0,d15,#1
+	extr.u	d15,d0,#0,#16
+.L35:
+	ld.h	d0,[a15]
+.L400:
+	ld.h	d1,[a15]2
+.L401:
+	mul	d0,d1
+.L402:
+	jlt	d15,d0,.L36
+.L403:
+	ret
+.L201:
+	
+__nvision_image_gray_threshold_function_end:
+	.size	nvision_image_gray_threshold,__nvision_image_gray_threshold_function_end-nvision_image_gray_threshold
+.L135:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_image_hsl_threshold',code,cluster('nvision_image_hsl_threshold')
+	.sect	'.text.core.nvision_image_hsl_threshold'
+	.align	2
+	
+	.global	nvision_image_hsl_threshold
+; Function nvision_image_hsl_threshold
+.L65:
+nvision_image_hsl_threshold:	.type	func
+	mov.aa	a15,a4
+.L253:
+	mov	d8,d4
+.L254:
+	mov.aa	a4,a5
+.L252:
+	call	nvision_image_gray_raw
+.L251:
+	mov.aa	a12,a2
+.L255:
+	mov	d9,#0
+.L256:
+	j	.L39
+.L40:
+	mul	d15,d9,#12
+.L408:
+	ld.a	a2,[a15]4
+.L409:
+	addsc.a	a4,a2,d15,#0
+.L410:
+	lea	a5,[a10]0
+.L411:
+	lea	a6,[a10]12
+	call	nvision_color_hsl_in_range
+.L412:
+	jeq	d2,#0,.L41
+.L413:
+	addsc.a	a2,a12,d9,#0
+.L414:
+	eq	d15,d8,#0
+.L415:
+	st.b	[a2],d15
+.L416:
+	j	.L42
+.L41:
+	addsc.a	a2,a12,d9,#0
+.L417:
+	eq	d15,d8,#0
+.L418:
+	eq	d15,d15,#0
+.L419:
+	st.b	[a2],d15
+.L42:
+	add	d15,d9,#1
+	extr.u	d9,d15,#0,#16
+.L39:
+	ld.h	d0,[a15]
+.L420:
+	ld.h	d15,[a15]2
+.L421:
+	mul	d0,d15
+.L422:
+	jlt	d9,d0,.L40
+.L423:
+	ret
+.L209:
+	
+__nvision_image_hsl_threshold_function_end:
+	.size	nvision_image_hsl_threshold,__nvision_image_hsl_threshold_function_end-nvision_image_hsl_threshold
+.L140:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_image_rgb_raw',code,cluster('nvision_image_rgb_raw')
+	.sect	'.text.core.nvision_image_rgb_raw'
+	.align	2
+	
+	.global	nvision_image_rgb_raw
+; Function nvision_image_rgb_raw
+.L67:
+nvision_image_rgb_raw:	.type	func
+	ld.a	a2,[a4]4
+.L286:
+	j	.L43
+.L43:
+	ret
+.L166:
+	
+__nvision_image_rgb_raw_function_end:
+	.size	nvision_image_rgb_raw,__nvision_image_rgb_raw_function_end-nvision_image_rgb_raw
+.L95:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_image_hsl_raw',code,cluster('nvision_image_hsl_raw')
+	.sect	'.text.core.nvision_image_hsl_raw'
+	.align	2
+	
+	.global	nvision_image_hsl_raw
+; Function nvision_image_hsl_raw
+.L69:
+nvision_image_hsl_raw:	.type	func
+	ld.a	a2,[a4]4
+.L291:
+	j	.L44
+.L44:
+	ret
+.L169:
+	
+__nvision_image_hsl_raw_function_end:
+	.size	nvision_image_hsl_raw,__nvision_image_hsl_raw_function_end-nvision_image_hsl_raw
+.L100:
+	; End of function
+	
+	.sdecl	'.text.core.nvision_image_gray_raw',code,cluster('nvision_image_gray_raw')
+	.sect	'.text.core.nvision_image_gray_raw'
+	.align	2
+	
+	.global	nvision_image_gray_raw
+; Function nvision_image_gray_raw
+.L71:
+nvision_image_gray_raw:	.type	func
+	ld.a	a2,[a4]4
+.L296:
+	j	.L45
+.L45:
+	ret
+.L172:
+	
+__nvision_image_gray_raw_function_end:
+	.size	nvision_image_gray_raw,__nvision_image_gray_raw_function_end-nvision_image_gray_raw
+.L105:
+	; End of function
+	
+	.calls	'nvision_color_rgb_to_hsl','fmaxf'
+	.calls	'nvision_color_rgb_to_hsl','fminf'
+	.calls	'nvision_image_rgb_to_hsl','nvision_color_rgb_to_hsl'
+	.calls	'nvision_image_rgb_to_gray','nvision_color_rgb_to_gray'
+	.calls	'nvision_image_gray_threshold','nvision_image_gray_raw'
+	.calls	'nvision_image_gray_threshold','nvision_gray_threshold_otsu'
+	.calls	'nvision_image_hsl_threshold','nvision_image_gray_raw'
+	.calls	'nvision_image_hsl_threshold','nvision_color_hsl_in_range'
+	.calls	'nvision_image_create_rgb_from_buffer','',0
+	.calls	'nvision_image_create_hsl_from_buffer','',0
+	.calls	'nvision_image_create_gray_from_buffer','',0
+	.calls	'nvision_color_rgb_to_hsl','',0
+	.calls	'nvision_color_rgb_to_gray','',0
+	.calls	'nvision_color_hsl_in_range','',0
+	.calls	'nvision_image_rgb_to_hsl','',0
+	.calls	'nvision_image_rgb_to_gray','',0
+	.calls	'nvision_image_gray_threshold','',0
+	.calls	'nvision_image_hsl_threshold','',0
+	.calls	'nvision_image_rgb_raw','',0
+	.calls	'nvision_image_hsl_raw','',0
+	.extern	nvision_gray_threshold_otsu
+	.extern	fmaxf
+	.extern	fminf
+	.calls	'nvision_image_gray_raw','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L73:
+	.word	1005
+	.half	3
+	.word	.L74
+	.byte	4
+.L72:
+	.byte	1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L75
+.L146:
+	.byte	2
+	.byte	'short int',0,2,5
+.L188:
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.byte	'nvision_rgb888',0,1,77,8,4,4
+	.byte	'red',0
+	.word	175
+	.byte	1,2,35,0,4
+	.byte	'green',0
+	.word	175
+	.byte	1,2,35,1,4
+	.byte	'blue',0
+	.word	175
+	.byte	1,2,35,2,0
+.L165:
+	.byte	5
+	.word	192
+	.byte	3
+	.byte	'nvision_rgb888_image',0,1,113,8,8,4
+	.byte	'width',0
+	.word	162
+	.byte	2,2,35,0,4
+	.byte	'height',0
+	.word	162
+	.byte	2,2,35,2,4
+	.byte	'data',0
+	.word	255
+	.byte	4,2,35,4,0
+.L142:
+	.byte	5
+	.word	260
+.L144:
+	.byte	5
+	.word	175
+.L149:
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L177:
+	.byte	2
+	.byte	'float',0,4,4
+.L212:
+	.byte	3
+	.byte	'nvision_hsl',0,1,89,8,12,4
+	.byte	'hue',0
+	.word	364
+	.byte	4,2,35,0,4
+	.byte	'saturation',0
+	.word	364
+	.byte	4,2,35,4,4
+	.byte	'lightness',0
+	.word	364
+	.byte	4,2,35,8,0
+.L168:
+	.byte	5
+	.word	373
+	.byte	3
+	.byte	'nvision_hsl_image',0,1,123,8,8,4
+	.byte	'width',0
+	.word	162
+	.byte	2,2,35,0,4
+	.byte	'height',0
+	.word	162
+	.byte	2,2,35,2,4
+	.byte	'data',0
+	.word	443
+	.byte	4,2,35,4,0
+.L152:
+	.byte	5
+	.word	448
+.L171:
+	.byte	5
+	.word	175
+	.byte	3
+	.byte	'nvision_gray_image',0,1,133,1,8,8,4
+	.byte	'width',0
+	.word	162
+	.byte	2,2,35,0,4
+	.byte	'height',0
+	.word	162
+	.byte	2,2,35,2,4
+	.byte	'data',0
+	.word	522
+	.byte	4,2,35,4,0
+.L159:
+	.byte	5
+	.word	527
+	.byte	6
+	.byte	'nvision_gray_threshold_otsu',0,2,25,16
+	.word	175
+	.byte	1,1,1,1,7
+	.byte	'gray_image',0,2,25,71
+	.word	598
+	.byte	0,6
+	.byte	'fmaxf',0,3,134,2,25
+	.word	364
+	.byte	1,1,1,1,8,3,134,2,43
+	.word	364
+	.byte	8,3,134,2,50
+	.word	364
+	.byte	0,6
+	.byte	'fminf',0,3,137,2,25
+	.word	364
+	.byte	1,1,1,1,8,3,137,2,43
+	.word	364
+	.byte	8,3,137,2,50
+	.word	364
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,9
+	.byte	'__size_t',0,4,1,1
+	.word	739
+	.byte	10,1,5
+	.word	772
+	.byte	9
+	.byte	'__codeptr',0,4,1,1
+	.word	774
+	.byte	2
+	.byte	'int',0,4,5,9
+	.byte	'__intptr_t',0,4,1,1
+	.word	797
+	.byte	9
+	.byte	'__uintptr_t',0,4,1,1
+	.word	739
+	.byte	9
+	.byte	'uint8_t',0,5,242,1,41
+	.word	175
+	.byte	9
+	.byte	'int16_t',0,5,245,1,41
+	.word	162
+	.byte	9
+	.byte	'uint16_t',0,5,246,1,41
+	.word	342
+	.byte	9
+	.byte	'nvision_rgb888_t',0,1,83,31
+	.word	192
+	.byte	9
+	.byte	'nvision_hsl_t',0,1,95,28
+	.word	373
+	.byte	9
+	.byte	'nvision_gray_t',0,1,101,17
+	.word	175
+	.byte	9
+	.byte	'nvision_size_t',0,1,107,17
+	.word	162
+	.byte	9
+	.byte	'_iob_flag_t',0,6,82,25
+	.word	342
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L74:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,19,1,3,8,58,15,59,15,57,15
+	.byte	11,15,0,0,4,13,0,3,8,73,19,11,15,56,9,0,0,5,15,0,73,19,0,0,6,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39
+	.byte	12,63,12,60,12,0,0,7,5,0,3,8,58,15,59,15,57,15,73,19,0,0,8,5,0,58,15,59,15,57,15,73,19,0,0,9,22,0,3,8
+	.byte	58,15,59,15,57,15,73,19,0,0,10,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L75:
+	.word	.L258-.L257
+.L257:
+	.half	3
+	.word	.L260-.L259
+.L259:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\image\\\\include',0
+	.byte	'D:\\infineon\\das64\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0,0
+	.byte	'nvision.h',0,1,0,0
+	.byte	'D:\\\\infineon\\\\Project\\\\Smart_Car3\\\\code\\\\image\\\\include\\threshold\\otsu.h',0,0,0,0
+	.byte	'math.h',0,2,0,0
+	.byte	'../code/image/sources/core.c',0,0,0,0
+	.byte	'stdint.h',0,2,0,0
+	.byte	'stdio.h',0,2,0,0,0
+.L260:
+.L258:
+	.sdecl	'.debug_info',debug,cluster('nvision_image_create_rgb_from_buffer')
+	.sect	'.debug_info'
+.L76:
+	.word	325
+	.half	3
+	.word	.L77
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L79,.L78
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_image_create_rgb_from_buffer',0,1,22,6,1,1,1
+	.word	.L47,.L141,.L46
+	.byte	4
+	.byte	'image',0,1,22,72
+	.word	.L142,.L143
+	.byte	4
+	.byte	'buffer',0,1,23,52
+	.word	.L144,.L145
+	.byte	4
+	.byte	'width',0,1,23,75
+	.word	.L146,.L147
+	.byte	4
+	.byte	'height',0,1,24,58
+	.word	.L146,.L148
+	.byte	4
+	.byte	'mode',0,1,25,52
+	.word	.L149,.L150
+	.byte	5
+	.word	.L47,.L141
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_image_create_rgb_from_buffer')
+	.sect	'.debug_abbrev'
+.L77:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_image_create_rgb_from_buffer')
+	.sect	'.debug_line'
+.L78:
+	.word	.L262-.L261
+.L261:
+	.half	3
+	.word	.L264-.L263
+.L263:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L264:
+	.byte	5,17,7,0,5,2
+	.word	.L47
+	.byte	3,25,1,5,18,9
+	.half	.L265-.L47
+	.byte	3,1,1,5,19,9
+	.half	.L266-.L265
+	.byte	3,1,1,5,1,9
+	.half	.L267-.L266
+	.byte	3,1,1,7,9
+	.half	.L80-.L267
+	.byte	0,1,1
+.L262:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_image_create_rgb_from_buffer')
+	.sect	'.debug_ranges'
+.L79:
+	.word	-1,.L47,0,.L80-.L47,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_image_create_hsl_from_buffer')
+	.sect	'.debug_info'
+.L81:
+	.word	325
+	.half	3
+	.word	.L82
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L84,.L83
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_image_create_hsl_from_buffer',0,1,31,6,1,1,1
+	.word	.L49,.L151,.L48
+	.byte	4
+	.byte	'image',0,1,31,69
+	.word	.L152,.L153
+	.byte	4
+	.byte	'buffer',0,1,32,52
+	.word	.L144,.L154
+	.byte	4
+	.byte	'width',0,1,32,75
+	.word	.L146,.L155
+	.byte	4
+	.byte	'height',0,1,33,58
+	.word	.L146,.L156
+	.byte	4
+	.byte	'mode',0,1,34,52
+	.word	.L149,.L157
+	.byte	5
+	.word	.L49,.L151
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_image_create_hsl_from_buffer')
+	.sect	'.debug_abbrev'
+.L82:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_image_create_hsl_from_buffer')
+	.sect	'.debug_line'
+.L83:
+	.word	.L269-.L268
+.L268:
+	.half	3
+	.word	.L271-.L270
+.L270:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L271:
+	.byte	5,17,7,0,5,2
+	.word	.L49
+	.byte	3,34,1,5,18,9
+	.half	.L272-.L49
+	.byte	3,1,1,5,19,9
+	.half	.L273-.L272
+	.byte	3,1,1,5,1,9
+	.half	.L274-.L273
+	.byte	3,1,1,7,9
+	.half	.L85-.L274
+	.byte	0,1,1
+.L269:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_image_create_hsl_from_buffer')
+	.sect	'.debug_ranges'
+.L84:
+	.word	-1,.L49,0,.L85-.L49,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_image_create_gray_from_buffer')
+	.sect	'.debug_info'
+.L86:
+	.word	326
+	.half	3
+	.word	.L87
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L89,.L88
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_image_create_gray_from_buffer',0,1,40,6,1,1,1
+	.word	.L51,.L158,.L50
+	.byte	4
+	.byte	'image',0,1,40,71
+	.word	.L159,.L160
+	.byte	4
+	.byte	'buffer',0,1,41,53
+	.word	.L144,.L161
+	.byte	4
+	.byte	'width',0,1,42,59
+	.word	.L146,.L162
+	.byte	4
+	.byte	'height',0,1,43,59
+	.word	.L146,.L163
+	.byte	4
+	.byte	'mode',0,1,44,53
+	.word	.L149,.L164
+	.byte	5
+	.word	.L51,.L158
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_image_create_gray_from_buffer')
+	.sect	'.debug_abbrev'
+.L87:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_image_create_gray_from_buffer')
+	.sect	'.debug_line'
+.L88:
+	.word	.L276-.L275
+.L275:
+	.half	3
+	.word	.L278-.L277
+.L277:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L278:
+	.byte	5,17,7,0,5,2
+	.word	.L51
+	.byte	3,44,1,5,18,9
+	.half	.L279-.L51
+	.byte	3,1,1,5,19,9
+	.half	.L280-.L279
+	.byte	3,1,1,5,1,9
+	.half	.L281-.L280
+	.byte	3,1,1,7,9
+	.half	.L90-.L281
+	.byte	0,1,1
+.L276:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_image_create_gray_from_buffer')
+	.sect	'.debug_ranges'
+.L89:
+	.word	-1,.L51,0,.L90-.L51,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_image_rgb_raw')
+	.sect	'.debug_info'
+.L91:
+	.word	243
+	.half	3
+	.word	.L92
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L94,.L93
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_image_rgb_raw',0,1,168,1,19
+	.word	.L165
+	.byte	1,1,1
+	.word	.L67,.L166,.L66
+	.byte	4
+	.byte	'image',0,1,168,1,70
+	.word	.L142,.L167
+	.byte	5
+	.word	.L67,.L166
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_image_rgb_raw')
+	.sect	'.debug_abbrev'
+.L92:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_image_rgb_raw')
+	.sect	'.debug_line'
+.L93:
+	.word	.L283-.L282
+.L282:
+	.half	3
+	.word	.L285-.L284
+.L284:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L285:
+	.byte	5,17,7,0,5,2
+	.word	.L67
+	.byte	3,168,1,1,5,5,9
+	.half	.L286-.L67
+	.byte	1,5,1,9
+	.half	.L43-.L286
+	.byte	3,1,1,7,9
+	.half	.L95-.L43
+	.byte	0,1,1
+.L283:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_image_rgb_raw')
+	.sect	'.debug_ranges'
+.L94:
+	.word	-1,.L67,0,.L95-.L67,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_image_hsl_raw')
+	.sect	'.debug_info'
+.L96:
+	.word	243
+	.half	3
+	.word	.L97
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L99,.L98
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_image_hsl_raw',0,1,172,1,16
+	.word	.L168
+	.byte	1,1,1
+	.word	.L69,.L169,.L68
+	.byte	4
+	.byte	'image',0,1,172,1,64
+	.word	.L152,.L170
+	.byte	5
+	.word	.L69,.L169
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_image_hsl_raw')
+	.sect	'.debug_abbrev'
+.L97:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_image_hsl_raw')
+	.sect	'.debug_line'
+.L98:
+	.word	.L288-.L287
+.L287:
+	.half	3
+	.word	.L290-.L289
+.L289:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L290:
+	.byte	5,17,7,0,5,2
+	.word	.L69
+	.byte	3,172,1,1,5,5,9
+	.half	.L291-.L69
+	.byte	1,5,1,9
+	.half	.L44-.L291
+	.byte	3,1,1,7,9
+	.half	.L100-.L44
+	.byte	0,1,1
+.L288:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_image_hsl_raw')
+	.sect	'.debug_ranges'
+.L99:
+	.word	-1,.L69,0,.L100-.L69,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_image_gray_raw')
+	.sect	'.debug_info'
+.L101:
+	.word	244
+	.half	3
+	.word	.L102
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L104,.L103
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_image_gray_raw',0,1,176,1,17
+	.word	.L171
+	.byte	1,1,1
+	.word	.L71,.L172,.L70
+	.byte	4
+	.byte	'image',0,1,176,1,67
+	.word	.L159,.L173
+	.byte	5
+	.word	.L71,.L172
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_image_gray_raw')
+	.sect	'.debug_abbrev'
+.L102:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_image_gray_raw')
+	.sect	'.debug_line'
+.L103:
+	.word	.L293-.L292
+.L292:
+	.half	3
+	.word	.L295-.L294
+.L294:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L295:
+	.byte	5,17,7,0,5,2
+	.word	.L71
+	.byte	3,176,1,1,5,5,9
+	.half	.L296-.L71
+	.byte	1,5,1,9
+	.half	.L45-.L296
+	.byte	3,1,1,7,9
+	.half	.L105-.L45
+	.byte	0,1,1
+.L293:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_image_gray_raw')
+	.sect	'.debug_ranges'
+.L104:
+	.word	-1,.L71,0,.L105-.L71,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_color_rgb_to_hsl')
+	.sect	'.debug_info'
+.L106:
+	.word	363
+	.half	3
+	.word	.L107
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L109,.L108
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_color_rgb_to_hsl',0,1,50,6,1,1,1
+	.word	.L53,.L174,.L52
+	.byte	4
+	.byte	'rgb',0,1,50,49
+	.word	.L165,.L175
+	.byte	4
+	.byte	'hsl',0,1,50,69
+	.word	.L168,.L176
+	.byte	5
+	.word	.L53,.L174
+	.byte	6
+	.byte	'r',0,1,51,11
+	.word	.L177,.L178
+	.byte	6
+	.byte	'g',0,1,52,11
+	.word	.L177,.L179
+	.byte	6
+	.byte	'b',0,1,53,11
+	.word	.L177,.L180
+	.byte	6
+	.byte	'max',0,1,55,11
+	.word	.L177,.L181
+	.byte	6
+	.byte	'min',0,1,56,11
+	.word	.L177,.L182
+	.byte	6
+	.byte	'delta',0,1,57,11
+	.word	.L177,.L183
+	.byte	6
+	.byte	'hue',0,1,59,11
+	.word	.L177,.L184
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_color_rgb_to_hsl')
+	.sect	'.debug_abbrev'
+.L107:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_color_rgb_to_hsl')
+	.sect	'.debug_line'
+.L108:
+	.word	.L298-.L297
+.L297:
+	.half	3
+	.word	.L300-.L299
+.L299:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L300:
+	.byte	5,6,7,0,5,2
+	.word	.L53
+	.byte	3,49,1,5,18,9
+	.half	.L219-.L53
+	.byte	3,1,1,5,26,9
+	.half	.L301-.L219
+	.byte	1,5,24,9
+	.half	.L302-.L301
+	.byte	1,5,18,9
+	.half	.L220-.L302
+	.byte	3,1,1,5,28,9
+	.half	.L303-.L220
+	.byte	1,5,26,9
+	.half	.L304-.L303
+	.byte	1,5,18,9
+	.half	.L221-.L304
+	.byte	3,1,1,5,27,9
+	.half	.L305-.L221
+	.byte	1,5,25,9
+	.half	.L306-.L305
+	.byte	1,5,35,9
+	.half	.L222-.L306
+	.byte	3,2,1,5,31,9
+	.half	.L218-.L222
+	.byte	1,5,15,9
+	.half	.L223-.L218
+	.byte	1,5,35,9
+	.half	.L225-.L223
+	.byte	3,1,1,5,31,9
+	.half	.L224-.L225
+	.byte	1,5,23,9
+	.half	.L226-.L224
+	.byte	3,1,1,5,15,9
+	.half	.L227-.L226
+	.byte	3,2,1,5,11,9
+	.half	.L228-.L227
+	.byte	3,2,1,5,5,9
+	.half	.L307-.L228
+	.byte	1,5,18,7,9
+	.half	.L308-.L307
+	.byte	3,1,1,5,23,9
+	.half	.L309-.L308
+	.byte	1,5,30,9
+	.half	.L310-.L309
+	.byte	1,5,18,9
+	.half	.L2-.L310
+	.byte	3,1,1,5,12,9
+	.half	.L311-.L2
+	.byte	1,5,22,7,9
+	.half	.L312-.L311
+	.byte	3,1,1,5,27,9
+	.half	.L313-.L312
+	.byte	1,5,15,9
+	.half	.L314-.L313
+	.byte	1,5,17,9
+	.half	.L229-.L314
+	.byte	1,5,34,9
+	.half	.L230-.L229
+	.byte	1,5,18,9
+	.half	.L4-.L230
+	.byte	3,1,1,5,12,9
+	.half	.L315-.L4
+	.byte	1,5,22,7,9
+	.half	.L316-.L315
+	.byte	3,1,1,5,27,9
+	.half	.L317-.L316
+	.byte	1,5,15,9
+	.half	.L318-.L317
+	.byte	1,5,17,9
+	.half	.L231-.L318
+	.byte	1,5,12,9
+	.half	.L3-.L231
+	.byte	3,3,1,5,9,9
+	.half	.L319-.L3
+	.byte	1,5,15,9
+	.half	.L320-.L319
+	.byte	3,1,1,5,13,9
+	.half	.L321-.L320
+	.byte	1,5,5,9
+	.half	.L322-.L321
+	.byte	1,5,16,7,9
+	.half	.L323-.L322
+	.byte	3,1,1,5,13,9
+	.half	.L324-.L323
+	.byte	1,5,14,9
+	.half	.L7-.L324
+	.byte	3,3,1,5,23,9
+	.half	.L325-.L7
+	.byte	3,1,1,5,47,9
+	.half	.L326-.L325
+	.byte	1,5,38,9
+	.half	.L327-.L326
+	.byte	1,5,34,9
+	.half	.L8-.L327
+	.byte	1,5,21,9
+	.half	.L9-.L8
+	.byte	1,5,27,9
+	.half	.L328-.L9
+	.byte	3,1,1,5,36,9
+	.half	.L329-.L328
+	.byte	1,5,34,9
+	.half	.L232-.L329
+	.byte	1,5,20,9
+	.half	.L330-.L232
+	.byte	1,5,1,9
+	.half	.L331-.L330
+	.byte	3,1,1,7,9
+	.half	.L110-.L331
+	.byte	0,1,1
+.L298:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_color_rgb_to_hsl')
+	.sect	'.debug_ranges'
+.L109:
+	.word	-1,.L53,0,.L110-.L53,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_color_rgb_to_gray')
+	.sect	'.debug_info'
+.L111:
+	.word	256
+	.half	3
+	.word	.L112
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L114,.L113
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_color_rgb_to_gray',0,1,79,6,1,1,1
+	.word	.L55,.L185,.L54
+	.byte	4
+	.byte	'rgb',0,1,79,50
+	.word	.L165,.L186
+	.byte	4
+	.byte	'gray',0,1,79,71
+	.word	.L171,.L187
+	.byte	5
+	.word	.L55,.L185
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_color_rgb_to_gray')
+	.sect	'.debug_abbrev'
+.L112:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_color_rgb_to_gray')
+	.sect	'.debug_line'
+.L113:
+	.word	.L333-.L332
+.L332:
+	.half	3
+	.word	.L335-.L334
+.L334:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L335:
+	.byte	5,19,7,0,5,2
+	.word	.L55
+	.byte	3,207,0,1,5,30,9
+	.half	.L336-.L55
+	.byte	1,5,25,9
+	.half	.L337-.L336
+	.byte	1,5,43,9
+	.half	.L338-.L337
+	.byte	1,5,38,9
+	.half	.L339-.L338
+	.byte	1,5,53,9
+	.half	.L340-.L339
+	.byte	1,5,51,9
+	.half	.L341-.L340
+	.byte	1,5,13,9
+	.half	.L342-.L341
+	.byte	1,5,1,9
+	.half	.L343-.L342
+	.byte	3,1,1,7,9
+	.half	.L115-.L343
+	.byte	0,1,1
+.L333:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_color_rgb_to_gray')
+	.sect	'.debug_ranges'
+.L114:
+	.word	-1,.L55,0,.L115-.L55,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_color_hsl_in_range')
+	.sect	'.debug_info'
+.L116:
+	.word	286
+	.half	3
+	.word	.L117
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L119,.L118
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_color_hsl_in_range',0,1,83,9
+	.word	.L188
+	.byte	1,1,1
+	.word	.L57,.L189,.L56
+	.byte	4
+	.byte	'hsl',0,1,83,51
+	.word	.L168,.L190
+	.byte	4
+	.byte	'start_hsl',0,1,83,71
+	.word	.L168,.L191
+	.byte	4
+	.byte	'end_hsl',0,1,84,51
+	.word	.L168,.L192
+	.byte	5
+	.word	.L57,.L189
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_color_hsl_in_range')
+	.sect	'.debug_abbrev'
+.L117:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_color_hsl_in_range')
+	.sect	'.debug_line'
+.L118:
+	.word	.L345-.L344
+.L344:
+	.half	3
+	.word	.L347-.L346
+.L346:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L347:
+	.byte	5,18,7,0,5,2
+	.word	.L57
+	.byte	3,212,0,1,5,24,9
+	.half	.L348-.L57
+	.byte	1,5,5,9
+	.half	.L349-.L348
+	.byte	1,5,14,7,9
+	.half	.L350-.L349
+	.byte	3,1,1,5,20,9
+	.half	.L13-.L350
+	.byte	3,1,1,5,13,9
+	.half	.L351-.L13
+	.byte	1,5,18,9
+	.half	.L10-.L351
+	.byte	3,4,1,5,31,9
+	.half	.L352-.L10
+	.byte	1,5,5,9
+	.half	.L353-.L352
+	.byte	1,5,14,7,9
+	.half	.L354-.L353
+	.byte	3,1,1,5,20,9
+	.half	.L19-.L354
+	.byte	3,2,1,5,13,9
+	.half	.L355-.L19
+	.byte	1,5,18,9
+	.half	.L16-.L355
+	.byte	3,4,1,5,30,9
+	.half	.L356-.L16
+	.byte	1,5,5,9
+	.half	.L357-.L356
+	.byte	1,5,14,7,9
+	.half	.L358-.L357
+	.byte	3,1,1,5,20,9
+	.half	.L25-.L358
+	.byte	3,2,1,5,13,9
+	.half	.L359-.L25
+	.byte	1,5,12,9
+	.half	.L22-.L359
+	.byte	3,4,1,5,5,9
+	.half	.L360-.L22
+	.byte	1,5,1,9
+	.half	.L15-.L360
+	.byte	3,1,1,7,9
+	.half	.L120-.L15
+	.byte	0,1,1
+.L345:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_color_hsl_in_range')
+	.sect	'.debug_ranges'
+.L119:
+	.word	-1,.L57,0,.L120-.L57,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_image_rgb_to_hsl')
+	.sect	'.debug_info'
+.L121:
+	.word	281
+	.half	3
+	.word	.L122
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L124,.L123
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_image_rgb_to_hsl',0,1,108,6,1,1,1
+	.word	.L59,.L193,.L58
+	.byte	4
+	.byte	'rgb_image',0,1,108,60
+	.word	.L142,.L194
+	.byte	4
+	.byte	'hsl_image',0,1,109,57
+	.word	.L152,.L195
+	.byte	5
+	.word	.L59,.L193
+	.byte	6
+	.byte	'i',0,1,110,14
+	.word	.L149,.L196
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_image_rgb_to_hsl')
+	.sect	'.debug_abbrev'
+.L122:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_image_rgb_to_hsl')
+	.sect	'.debug_line'
+.L123:
+	.word	.L362-.L361
+.L361:
+	.half	3
+	.word	.L364-.L363
+.L363:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L364:
+	.byte	5,6,7,0,5,2
+	.word	.L59
+	.byte	3,235,0,1,5,12,9
+	.half	.L234-.L59
+	.byte	3,3,1,5,57,9
+	.half	.L235-.L234
+	.byte	1,5,50,9
+	.half	.L30-.L235
+	.byte	3,1,1,5,44,9
+	.half	.L365-.L30
+	.byte	1,5,50,9
+	.half	.L366-.L365
+	.byte	1,5,71,9
+	.half	.L367-.L366
+	.byte	1,5,65,9
+	.half	.L368-.L367
+	.byte	1,5,71,9
+	.half	.L369-.L368
+	.byte	1,5,60,9
+	.half	.L370-.L369
+	.byte	3,127,1,5,30,9
+	.half	.L29-.L370
+	.byte	1,5,49,9
+	.half	.L371-.L29
+	.byte	1,5,38,9
+	.half	.L372-.L371
+	.byte	1,5,57,9
+	.half	.L373-.L372
+	.byte	1,5,1,7,9
+	.half	.L374-.L373
+	.byte	3,3,1,7,9
+	.half	.L125-.L374
+	.byte	0,1,1
+.L362:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_image_rgb_to_hsl')
+	.sect	'.debug_ranges'
+.L124:
+	.word	-1,.L59,0,.L125-.L59,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_image_rgb_to_gray')
+	.sect	'.debug_info'
+.L126:
+	.word	283
+	.half	3
+	.word	.L127
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L129,.L128
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_image_rgb_to_gray',0,1,116,6,1,1,1
+	.word	.L61,.L197,.L60
+	.byte	4
+	.byte	'rgb_image',0,1,116,61
+	.word	.L142,.L198
+	.byte	4
+	.byte	'gray_image',0,1,117,59
+	.word	.L159,.L199
+	.byte	5
+	.word	.L61,.L197
+	.byte	6
+	.byte	'i',0,1,118,14
+	.word	.L149,.L200
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_image_rgb_to_gray')
+	.sect	'.debug_abbrev'
+.L127:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_image_rgb_to_gray')
+	.sect	'.debug_line'
+.L128:
+	.word	.L376-.L375
+.L375:
+	.half	3
+	.word	.L378-.L377
+.L377:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L378:
+	.byte	5,6,7,0,5,2
+	.word	.L61
+	.byte	3,243,0,1,5,12,9
+	.half	.L238-.L61
+	.byte	3,3,1,5,57,9
+	.half	.L239-.L238
+	.byte	1,5,51,9
+	.half	.L32-.L239
+	.byte	3,1,1,5,45,9
+	.half	.L379-.L32
+	.byte	1,5,51,9
+	.half	.L380-.L379
+	.byte	1,5,67,9
+	.half	.L381-.L380
+	.byte	1,5,73,9
+	.half	.L382-.L381
+	.byte	1,5,60,9
+	.half	.L383-.L382
+	.byte	3,127,1,5,30,9
+	.half	.L31-.L383
+	.byte	1,5,49,9
+	.half	.L384-.L31
+	.byte	1,5,38,9
+	.half	.L385-.L384
+	.byte	1,5,57,9
+	.half	.L386-.L385
+	.byte	1,5,1,7,9
+	.half	.L387-.L386
+	.byte	3,3,1,7,9
+	.half	.L130-.L387
+	.byte	0,1,1
+.L376:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_image_rgb_to_gray')
+	.sect	'.debug_ranges'
+.L129:
+	.word	-1,.L61,0,.L130-.L61,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_image_gray_threshold')
+	.sect	'.debug_info'
+.L131:
+	.word	370
+	.half	3
+	.word	.L132
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L134,.L133
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_image_gray_threshold',0,1,124,6,1,1,1
+	.word	.L63,.L201,.L62
+	.byte	4
+	.byte	'gray_image',0,1,124,62
+	.word	.L159,.L202
+	.byte	4
+	.byte	'threshold',0,1,125,50
+	.word	.L188,.L203
+	.byte	4
+	.byte	'mode',0,1,125,70
+	.word	.L149,.L204
+	.byte	5
+	.word	.L63,.L201
+	.byte	6
+	.byte	'i',0,1,126,14
+	.word	.L149,.L205
+	.byte	6
+	.byte	'data',0,1,127,21
+	.word	.L171,.L206
+	.byte	6
+	.byte	'pixel_white',0,1,128,1,20
+	.word	.L188,.L207
+	.byte	6
+	.byte	'pixel_black',0,1,129,1,20
+	.word	.L188,.L208
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_image_gray_threshold')
+	.sect	'.debug_abbrev'
+.L132:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_image_gray_threshold')
+	.sect	'.debug_line'
+.L133:
+	.word	.L389-.L388
+.L388:
+	.half	3
+	.word	.L391-.L390
+.L390:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L391:
+	.byte	5,6,7,0,5,2
+	.word	.L63
+	.byte	3,251,0,1,5,51,9
+	.half	.L245-.L63
+	.byte	3,3,1,5,26,9
+	.half	.L241-.L245
+	.byte	1,5,32,9
+	.half	.L247-.L241
+	.byte	3,1,1,9
+	.half	.L248-.L247
+	.byte	3,1,1,5,5,9
+	.half	.L249-.L248
+	.byte	3,2,1,5,21,7,9
+	.half	.L392-.L249
+	.byte	3,1,1,9
+	.half	.L393-.L392
+	.byte	3,1,1,5,5,9
+	.half	.L33-.L393
+	.byte	3,4,1,5,49,7,9
+	.half	.L394-.L33
+	.byte	3,2,1,5,19,9
+	.half	.L244-.L394
+	.byte	1,5,12,9
+	.half	.L34-.L244
+	.byte	3,4,1,5,59,9
+	.half	.L246-.L34
+	.byte	1,5,17,9
+	.half	.L36-.L246
+	.byte	3,1,1,5,9,9
+	.half	.L395-.L36
+	.byte	1,5,17,7,9
+	.half	.L396-.L395
+	.byte	3,1,1,5,21,9
+	.half	.L397-.L396
+	.byte	1,5,34,9
+	.half	.L398-.L397
+	.byte	1,5,17,9
+	.half	.L37-.L398
+	.byte	3,2,1,5,21,9
+	.half	.L399-.L37
+	.byte	1,5,62,9
+	.half	.L38-.L399
+	.byte	3,124,1,5,31,9
+	.half	.L35-.L38
+	.byte	1,5,51,9
+	.half	.L400-.L35
+	.byte	1,5,39,9
+	.half	.L401-.L400
+	.byte	1,5,59,9
+	.half	.L402-.L401
+	.byte	1,5,1,7,9
+	.half	.L403-.L402
+	.byte	3,7,1,7,9
+	.half	.L135-.L403
+	.byte	0,1,1
+.L389:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_image_gray_threshold')
+	.sect	'.debug_ranges'
+.L134:
+	.word	-1,.L63,0,.L135-.L63,0,0
+	.sdecl	'.debug_info',debug,cluster('nvision_image_hsl_threshold')
+	.sect	'.debug_info'
+.L136:
+	.word	371
+	.half	3
+	.word	.L137
+	.byte	4,1
+	.byte	'../code/image/sources/core.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\infineon\\Project\\Smart_Car3\\Debug\\',0,12,1
+	.word	.L139,.L138
+	.byte	2
+	.word	.L72
+	.byte	3
+	.byte	'nvision_image_hsl_threshold',0,1,152,1,6,1,1,1
+	.word	.L65,.L209,.L64
+	.byte	4
+	.byte	'hsl_image',0,1,152,1,60
+	.word	.L152,.L210
+	.byte	4
+	.byte	'binary_image',0,1,153,1,61
+	.word	.L159,.L211
+	.byte	4
+	.byte	'start_hsl',0,1,154,1,48
+	.word	.L212,.L213
+	.byte	4
+	.byte	'end_hsl',0,1,154,1,73
+	.word	.L212,.L214
+	.byte	4
+	.byte	'mode',0,1,155,1,43
+	.word	.L149,.L215
+	.byte	5
+	.word	.L65,.L209
+	.byte	6
+	.byte	'i',0,1,156,1,14
+	.word	.L149,.L216
+	.byte	6
+	.byte	'data',0,1,157,1,21
+	.word	.L171,.L217
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('nvision_image_hsl_threshold')
+	.sect	'.debug_abbrev'
+.L137:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('nvision_image_hsl_threshold')
+	.sect	'.debug_line'
+.L138:
+	.word	.L405-.L404
+.L404:
+	.half	3
+	.word	.L407-.L406
+.L406:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/image/sources/core.c',0,0,0,0,0
+.L407:
+	.byte	5,6,7,0,5,2
+	.word	.L65
+	.byte	3,151,1,1,5,51,9
+	.half	.L254-.L65
+	.byte	3,5,1,5,26,9
+	.half	.L251-.L254
+	.byte	1,5,12,9
+	.half	.L255-.L251
+	.byte	3,1,1,5,57,9
+	.half	.L256-.L255
+	.byte	1,5,56,9
+	.half	.L40-.L256
+	.byte	3,1,1,5,50,9
+	.half	.L408-.L40
+	.byte	1,5,56,9
+	.half	.L409-.L408
+	.byte	1,5,62,9
+	.half	.L410-.L409
+	.byte	1,5,41,9
+	.half	.L411-.L410
+	.byte	3,1,1,5,9,9
+	.half	.L412-.L411
+	.byte	3,127,1,5,17,7,9
+	.half	.L413-.L412
+	.byte	3,2,1,5,29,9
+	.half	.L414-.L413
+	.byte	1,5,21,9
+	.half	.L415-.L414
+	.byte	1,5,66,9
+	.half	.L416-.L415
+	.byte	1,5,17,9
+	.half	.L41-.L416
+	.byte	3,2,1,5,30,9
+	.half	.L417-.L41
+	.byte	1,5,23,9
+	.half	.L418-.L417
+	.byte	1,5,21,9
+	.half	.L419-.L418
+	.byte	1,5,60,9
+	.half	.L42-.L419
+	.byte	3,123,1,5,30,9
+	.half	.L39-.L42
+	.byte	1,5,49,9
+	.half	.L420-.L39
+	.byte	1,5,38,9
+	.half	.L421-.L420
+	.byte	1,5,57,9
+	.half	.L422-.L421
+	.byte	1,5,1,7,9
+	.half	.L423-.L422
+	.byte	3,8,1,7,9
+	.half	.L140-.L423
+	.byte	0,1,1
+.L405:
+	.sdecl	'.debug_ranges',debug,cluster('nvision_image_hsl_threshold')
+	.sect	'.debug_ranges'
+.L139:
+	.word	-1,.L65,0,.L140-.L65,0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_color_hsl_in_range')
+	.sect	'.debug_loc'
+.L192:
+	.word	-1,.L57,0,.L189-.L57
+	.half	1
+	.byte	102
+	.word	0,0
+.L190:
+	.word	-1,.L57,0,.L189-.L57
+	.half	1
+	.byte	100
+	.word	0,0
+.L56:
+	.word	-1,.L57,0,.L189-.L57
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L191:
+	.word	-1,.L57,0,.L189-.L57
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_color_rgb_to_gray')
+	.sect	'.debug_loc'
+.L187:
+	.word	-1,.L55,0,.L185-.L55
+	.half	1
+	.byte	101
+	.word	0,0
+.L54:
+	.word	-1,.L55,0,.L185-.L55
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L186:
+	.word	-1,.L55,0,.L185-.L55
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_color_rgb_to_hsl')
+	.sect	'.debug_loc'
+.L180:
+	.word	-1,.L53,.L222-.L53,.L174-.L53
+	.half	1
+	.byte	91
+	.word	0,0
+.L183:
+	.word	-1,.L53,.L227-.L53,.L174-.L53
+	.half	1
+	.byte	81
+	.word	0,0
+.L179:
+	.word	-1,.L53,.L221-.L53,.L174-.L53
+	.half	1
+	.byte	89
+	.word	0,0
+.L176:
+	.word	-1,.L53,0,.L218-.L53
+	.half	1
+	.byte	101
+	.word	.L219-.L53,.L174-.L53
+	.half	1
+	.byte	111
+	.word	0,0
+.L184:
+	.word	-1,.L53,.L228-.L53,.L229-.L53
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L230-.L53,.L231-.L53
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L3-.L53,.L232-.L53
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L181:
+	.word	-1,.L53,.L223-.L53,.L224-.L53
+	.half	1
+	.byte	82
+	.word	.L225-.L53,.L174-.L53
+	.half	1
+	.byte	90
+	.word	0,0
+.L182:
+	.word	-1,.L53,.L226-.L53,.L174-.L53
+	.half	1
+	.byte	82
+	.word	0,0
+.L52:
+	.word	-1,.L53,0,.L174-.L53
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L178:
+	.word	-1,.L53,.L220-.L53,.L174-.L53
+	.half	1
+	.byte	88
+	.word	0,0
+.L175:
+	.word	-1,.L53,0,.L218-.L53
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_image_create_gray_from_buffer')
+	.sect	'.debug_loc'
+.L161:
+	.word	-1,.L51,0,.L158-.L51
+	.half	1
+	.byte	101
+	.word	0,0
+.L163:
+	.word	-1,.L51,0,.L158-.L51
+	.half	1
+	.byte	85
+	.word	0,0
+.L160:
+	.word	-1,.L51,0,.L158-.L51
+	.half	1
+	.byte	100
+	.word	0,0
+.L164:
+	.word	-1,.L51,0,.L158-.L51
+	.half	1
+	.byte	86
+	.word	0,0
+.L50:
+	.word	-1,.L51,0,.L158-.L51
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L162:
+	.word	-1,.L51,0,.L158-.L51
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_image_create_hsl_from_buffer')
+	.sect	'.debug_loc'
+.L154:
+	.word	-1,.L49,0,.L151-.L49
+	.half	1
+	.byte	101
+	.word	0,0
+.L156:
+	.word	-1,.L49,0,.L151-.L49
+	.half	1
+	.byte	85
+	.word	0,0
+.L153:
+	.word	-1,.L49,0,.L151-.L49
+	.half	1
+	.byte	100
+	.word	0,0
+.L157:
+	.word	-1,.L49,0,.L151-.L49
+	.half	1
+	.byte	86
+	.word	0,0
+.L48:
+	.word	-1,.L49,0,.L151-.L49
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L155:
+	.word	-1,.L49,0,.L151-.L49
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_image_create_rgb_from_buffer')
+	.sect	'.debug_loc'
+.L145:
+	.word	-1,.L47,0,.L141-.L47
+	.half	1
+	.byte	101
+	.word	0,0
+.L148:
+	.word	-1,.L47,0,.L141-.L47
+	.half	1
+	.byte	85
+	.word	0,0
+.L143:
+	.word	-1,.L47,0,.L141-.L47
+	.half	1
+	.byte	100
+	.word	0,0
+.L150:
+	.word	-1,.L47,0,.L141-.L47
+	.half	1
+	.byte	86
+	.word	0,0
+.L46:
+	.word	-1,.L47,0,.L141-.L47
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L147:
+	.word	-1,.L47,0,.L141-.L47
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_image_gray_raw')
+	.sect	'.debug_loc'
+.L173:
+	.word	-1,.L71,0,.L172-.L71
+	.half	1
+	.byte	100
+	.word	0,0
+.L70:
+	.word	-1,.L71,0,.L172-.L71
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_image_gray_threshold')
+	.sect	'.debug_loc'
+.L206:
+	.word	-1,.L63,.L241-.L63,.L244-.L63
+	.half	1
+	.byte	98
+	.word	.L247-.L63,.L201-.L63
+	.half	1
+	.byte	108
+	.word	0,0
+.L202:
+	.word	-1,.L63,0,.L241-.L63
+	.half	1
+	.byte	100
+	.word	.L242-.L63,.L201-.L63
+	.half	1
+	.byte	111
+	.word	.L250-.L63,.L244-.L63
+	.half	1
+	.byte	100
+	.word	0,0
+.L205:
+	.word	-1,.L63,.L246-.L63,.L201-.L63
+	.half	1
+	.byte	95
+	.word	0,0
+.L204:
+	.word	-1,.L63,0,.L241-.L63
+	.half	1
+	.byte	85
+	.word	.L245-.L63,.L246-.L63
+	.half	1
+	.byte	95
+	.word	0,0
+.L62:
+	.word	-1,.L63,0,.L201-.L63
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L208:
+	.word	-1,.L63,.L249-.L63,.L201-.L63
+	.half	1
+	.byte	90
+	.word	0,0
+.L207:
+	.word	-1,.L63,.L248-.L63,.L201-.L63
+	.half	1
+	.byte	89
+	.word	0,0
+.L203:
+	.word	-1,.L63,0,.L241-.L63
+	.half	1
+	.byte	84
+	.word	.L243-.L63,.L244-.L63
+	.half	1
+	.byte	88
+	.word	.L244-.L63,.L34-.L63
+	.half	1
+	.byte	82
+	.word	.L34-.L63,.L201-.L63
+	.half	1
+	.byte	88
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_image_hsl_raw')
+	.sect	'.debug_loc'
+.L170:
+	.word	-1,.L69,0,.L169-.L69
+	.half	1
+	.byte	100
+	.word	0,0
+.L68:
+	.word	-1,.L69,0,.L169-.L69
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_image_hsl_threshold')
+	.sect	'.debug_loc'
+.L211:
+	.word	-1,.L65,0,.L251-.L65
+	.half	1
+	.byte	101
+	.word	.L252-.L65,.L251-.L65
+	.half	1
+	.byte	100
+	.word	0,0
+.L217:
+	.word	-1,.L65,.L251-.L65,.L40-.L65
+	.half	1
+	.byte	98
+	.word	.L255-.L65,.L209-.L65
+	.half	1
+	.byte	108
+	.word	0,0
+.L214:
+	.word	-1,.L65,0,.L209-.L65
+	.half	2
+	.byte	145,12
+	.word	0,0
+.L210:
+	.word	-1,.L65,0,.L252-.L65
+	.half	1
+	.byte	100
+	.word	.L253-.L65,.L209-.L65
+	.half	1
+	.byte	111
+	.word	0,0
+.L216:
+	.word	-1,.L65,.L256-.L65,.L209-.L65
+	.half	1
+	.byte	89
+	.word	0,0
+.L215:
+	.word	-1,.L65,0,.L251-.L65
+	.half	1
+	.byte	84
+	.word	.L254-.L65,.L209-.L65
+	.half	1
+	.byte	88
+	.word	0,0
+.L64:
+	.word	-1,.L65,0,.L209-.L65
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L213:
+	.word	-1,.L65,0,.L209-.L65
+	.half	2
+	.byte	145,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_image_rgb_raw')
+	.sect	'.debug_loc'
+.L167:
+	.word	-1,.L67,0,.L166-.L67
+	.half	1
+	.byte	100
+	.word	0,0
+.L66:
+	.word	-1,.L67,0,.L166-.L67
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_image_rgb_to_gray')
+	.sect	'.debug_loc'
+.L199:
+	.word	-1,.L61,0,.L32-.L61
+	.half	1
+	.byte	101
+	.word	.L238-.L61,.L197-.L61
+	.half	1
+	.byte	108
+	.word	0,0
+.L200:
+	.word	-1,.L61,.L239-.L61,.L240-.L61
+	.half	1
+	.byte	88
+	.word	.L31-.L61,.L197-.L61
+	.half	1
+	.byte	88
+	.word	0,0
+.L60:
+	.word	-1,.L61,0,.L197-.L61
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L198:
+	.word	-1,.L61,0,.L32-.L61
+	.half	1
+	.byte	100
+	.word	.L237-.L61,.L197-.L61
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('nvision_image_rgb_to_hsl')
+	.sect	'.debug_loc'
+.L195:
+	.word	-1,.L59,0,.L30-.L59
+	.half	1
+	.byte	101
+	.word	.L234-.L59,.L193-.L59
+	.half	1
+	.byte	108
+	.word	0,0
+.L196:
+	.word	-1,.L59,.L235-.L59,.L236-.L59
+	.half	1
+	.byte	88
+	.word	.L29-.L59,.L193-.L59
+	.half	1
+	.byte	88
+	.word	0,0
+.L58:
+	.word	-1,.L59,0,.L193-.L59
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L194:
+	.word	-1,.L59,0,.L30-.L59
+	.half	1
+	.byte	100
+	.word	.L233-.L59,.L193-.L59
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L424:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('nvision_image_create_rgb_from_buffer')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L424,.L47,.L141-.L47
+	.byte	8,18,8,19,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('nvision_image_create_hsl_from_buffer')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L424,.L49,.L151-.L49
+	.byte	8,18,8,19,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('nvision_image_create_gray_from_buffer')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L424,.L51,.L158-.L51
+	.byte	8,18,8,19,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('nvision_color_rgb_to_hsl')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L424,.L53,.L174-.L53
+	.sdecl	'.debug_frame',debug,cluster('nvision_color_rgb_to_gray')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L424,.L55,.L185-.L55
+	.byte	8,18,8,19,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('nvision_color_hsl_in_range')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L424,.L57,.L189-.L57
+	.byte	8,18,8,19,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('nvision_image_rgb_to_hsl')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L424,.L59,.L193-.L59
+	.sdecl	'.debug_frame',debug,cluster('nvision_image_rgb_to_gray')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L424,.L61,.L197-.L61
+	.sdecl	'.debug_frame',debug,cluster('nvision_image_gray_threshold')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L424,.L63,.L201-.L63
+	.sdecl	'.debug_frame',debug,cluster('nvision_image_hsl_threshold')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L424,.L65,.L209-.L65
+	.sdecl	'.debug_frame',debug,cluster('nvision_image_rgb_raw')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L424,.L67,.L166-.L67
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('nvision_image_hsl_raw')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L424,.L69,.L169-.L69
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('nvision_image_gray_raw')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L424,.L71,.L172-.L71
+	.byte	8,19,8,21,8,22,8,23
+	; Module end
