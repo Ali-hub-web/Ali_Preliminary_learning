@@ -56,23 +56,51 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-//Why the function of IRQ is invalid?
+//////////////////////////////////////////////////////////////////////
+
+//To receive and transmit: //
+
+/**************************************************************** */
+//Why the function of IRQ is invalid?        
+//Because the port has been connected reversely.
+
+//To notion: the IRQHandler function need to cancle its origin in it.c text.
+/*************************************************************** */
+
+void USART1_IRQHandler(void)  
+{
+    volatile uint8_t receive;
+    //receive interrupt ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
+    if(huart1.Instance->SR & UART_FLAG_RXNE)
+    {
+        receive = huart1.Instance->DR;
+        HAL_GPIO_TogglePin(LED_blue_GPIO_Port, LED_blue_Pin);
+
+    }
+    //idle interrupt ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
+    else if(huart1.Instance->SR & UART_FLAG_IDLE)
+    {
+        receive = huart1.Instance->DR;
+        HAL_GPIO_WritePin(LED_blue_GPIO_Port, LED_blue_Pin, GPIO_PIN_RESET);
+    }
+
+}
 void USART6_IRQHandler(void)  
 {
 
     volatile uint8_t receive;
-    //receive interrupt ½ÓÊÕÖÐ¶Ï
+    //receive interrupt ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
     if(huart6.Instance->SR & UART_FLAG_RXNE)
     {
         receive = huart6.Instance->DR;
-        HAL_GPIO_TogglePin(LED_red_GPIO_Port, LED_red_Pin);
+        HAL_GPIO_TogglePin(LED_green_GPIO_Port, LED_green_Pin);
 
     }
-    //idle interrupt ¿ÕÏÐÖÐ¶Ï
+    //idle interrupt ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
     else if(huart6.Instance->SR & UART_FLAG_IDLE)
     {
         receive = huart6.Instance->DR;
-        HAL_GPIO_WritePin(LED_red_GPIO_Port, LED_red_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(LED_green_GPIO_Port, LED_green_Pin, GPIO_PIN_RESET);
     }
 
 
@@ -114,12 +142,12 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
-	HAL_GPIO_WritePin(LED_red_GPIO_Port, LED_red_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(LED_red_GPIO_Port, LED_red_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(LED_green_GPIO_Port, LED_green_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(LED_blue_GPIO_Port, LED_blue_Pin, GPIO_PIN_RESET);
 	
-//	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);  
-//    __HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);  
+	  __HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);  
+    __HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);  
     __HAL_UART_ENABLE_IT(&huart6, UART_IT_RXNE);  
     __HAL_UART_ENABLE_IT(&huart6, UART_IT_IDLE); 
   /* USER CODE END 2 */
@@ -131,12 +159,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	//	        HAL_UART_Transmit(&huart1, "RoboMast12\r\n", 12, 100);
-//			HAL_Delay(100);
+
 			HAL_UART_Transmit(&huart6, "HelloWorld\r\n", 12, 100);
 			HAL_Delay(100);
-//	   HAL_UART_Transmit(&huart6, "RoboMaster\r\n", 12, 100);
-//        HAL_Delay(100);  
+      HAL_UART_Transmit(&huart1, "BeginCoding\r\n", 12, 100);
+      HAL_Delay(100);  
 	  
   }
   /* USER CODE END 3 */
