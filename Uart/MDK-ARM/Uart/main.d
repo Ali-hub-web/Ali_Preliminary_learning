@@ -29,5 +29,9 @@ uart\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 uart\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 uart\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 uart\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+uart\main.o: ../Core/Inc/dma.h
 uart\main.o: ../Core/Inc/usart.h
 uart\main.o: ../Core/Inc/gpio.h
+uart\main.o: D:\keil\ARM\ARMCompiler_506\Bin\..\include\stdio.h
+uart\main.o: D:\keil\ARM\ARMCompiler_506\Bin\..\include\stdarg.h
+uart\main.o: D:\keil\ARM\ARMCompiler_506\Bin\..\include\string.h

@@ -35,6 +35,7 @@ remote_control\main.o: ../Core/Inc/gpio.h
 remote_control\main.o: ../Core/Inc/rc.h
 remote_control\main.o: ../Core/Inc/struct_typedef.h
 remote_control\main.o: ../Core/Inc/remote_control.h
+remote_control\main.o: ../Core/Inc/uart.h
 remote_control\main.o: D:\keil\ARM\ARMCompiler_506\Bin\..\include\stdio.h
 remote_control\main.o: D:\keil\ARM\ARMCompiler_506\Bin\..\include\stdarg.h
 remote_control\main.o: D:\keil\ARM\ARMCompiler_506\Bin\..\include\string.h

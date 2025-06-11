@@ -2,6 +2,7 @@
 "uart\startup_stm32f407xx.o"
 "uart\main.o"
 "uart\gpio.o"
+"uart\dma.o"
 "uart\usart.o"
 "uart\stm32f4xx_it.o"
 "uart\stm32f4xx_hal_msp.o"

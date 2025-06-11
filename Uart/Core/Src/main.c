@@ -18,12 +18,15 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
+#include <stdarg.h>
+#include "string.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -44,7 +47,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint8_t Uartbuffer[100];
+char message[] = "HelloWorld\r\n";
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -70,14 +74,14 @@ void SystemClock_Config(void);
 void USART1_IRQHandler(void)  
 {
     volatile uint8_t receive;
-    //receive interrupt �����ж�
+    //receive interrupt 
     if(huart1.Instance->SR & UART_FLAG_RXNE)
     {
         receive = huart1.Instance->DR;
         HAL_GPIO_TogglePin(LED_blue_GPIO_Port, LED_blue_Pin);
 
     }
-    //idle interrupt �����ж�
+    //idle interrupt
     else if(huart1.Instance->SR & UART_FLAG_IDLE)
     {
         receive = huart1.Instance->DR;
@@ -87,27 +91,44 @@ void USART1_IRQHandler(void)
 }
 void USART6_IRQHandler(void)  
 {
-
     volatile uint8_t receive;
-    //receive interrupt �����ж�
+    //receive interrupt 
     if(huart6.Instance->SR & UART_FLAG_RXNE)
     {
         receive = huart6.Instance->DR;
         HAL_GPIO_TogglePin(LED_green_GPIO_Port, LED_green_Pin);
 
     }
-    //idle interrupt �����ж�
+    //idle interrupt
     else if(huart6.Instance->SR & UART_FLAG_IDLE)
     {
         receive = huart6.Instance->DR;
         HAL_GPIO_WritePin(LED_green_GPIO_Port, LED_green_Pin, GPIO_PIN_RESET);
     }
 
-
 }
 
 
 
+
+///****************************************To testify the dma receive and send function**************************************************************** */
+//  void USART6_IRQHandler(void)  
+// {
+
+//    HAL_UART_Transmit_DMA(&huart6, Uartbuffer, 2);
+
+//    if(Uartbuffer[0] == '1')
+//    {
+//       HAL_GPIO_TogglePin(LED_blue_GPIO_Port, LED_blue_Pin);
+//    }
+   
+//    HAL_UART_Receive_DMA(&huart6, Uartbuffer, 2);
+
+
+// }
+
+
+ 
 /* USER CODE END 0 */
 
 /**
@@ -139,32 +160,38 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_USART1_UART_Init();
   MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
 	  HAL_GPIO_WritePin(LED_red_GPIO_Port, LED_red_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(LED_green_GPIO_Port, LED_green_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(LED_blue_GPIO_Port, LED_blue_Pin, GPIO_PIN_RESET);
-	
+	//enable the idle and rxne interruption
 	  __HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);  
     __HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);  
     __HAL_UART_ENABLE_IT(&huart6, UART_IT_RXNE);  
     __HAL_UART_ENABLE_IT(&huart6, UART_IT_IDLE); 
+
+    HAL_UART_Receive_DMA(&huart6, Uartbuffer, 2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    /////////////////////////////**************To testify the send function******************************************** */
+    // HAL_UART_Transmit(&huart6, (uint8_t*)message, strlen(message), 100);
+    // HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
+//***************************************To testify the uart of interrupt************************************************************** */
 			HAL_UART_Transmit(&huart6, "HelloWorld\r\n", 12, 100);
 			HAL_Delay(100);
       HAL_UART_Transmit(&huart1, "BeginCoding\r\n", 12, 100);
       HAL_Delay(100);  
-	  
+	
   }
   /* USER CODE END 3 */
 }

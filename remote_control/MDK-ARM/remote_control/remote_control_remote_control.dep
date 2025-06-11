@@ -1,6 +1,6 @@
 Dependencies for Project 'remote_control', Target 'remote_control': (DO NOT MODIFY !)
 F (startup_stm32f407xx.s)(0x6845554B)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_remote_control-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o remote_control\startup_stm32f407xx.o --depend remote_control\startup_stm32f407xx.d)
-F (../Core/Src/main.c)(0x68457743)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_remote_control-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o remote_control\main.o --omf_browse remote_control\main.crf --depend remote_control\main.d)
+F (../Core/Src/main.c)(0x68481C7B)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_remote_control-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o remote_control\main.o --omf_browse remote_control\main.crf --depend remote_control\main.d)
 I (../Core/Inc/main.h)(0x68455549)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68330136)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6843FB38)
@@ -36,6 +36,7 @@ I (../Core/Inc/gpio.h)(0x6843FB38)
 I (../Core/Inc/rc.h)(0x68456F93)
 I (../Core/Inc/struct_typedef.h)(0x684408EB)
 I (../Core/Inc/remote_control.h)(0x684410EF)
+I (../Core/Inc/uart.h)(0x68457688)
 I (D:\keil\ARM\ARMCompiler_506\include\stdio.h)(0x5E8E3CC2)
 I (D:\keil\ARM\ARMCompiler_506\include\stdarg.h)(0x5E8E3CC2)
 I (D:\keil\ARM\ARMCompiler_506\include\string.h)(0x5E8E3CC2)
