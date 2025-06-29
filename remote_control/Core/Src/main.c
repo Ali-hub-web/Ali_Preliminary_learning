@@ -165,9 +165,9 @@ key:%d\r\n\
 
   ///////////////////////////********************************************* */
   //to test the dma transmit;
-  // usart_printf("len = %d\r\n", len);
-  // HAL_Delay(1000);
-  // len++;
+//   usart_printf("len = %d\r\n", len);
+//   HAL_Delay(1000);
+//   len++;
 
 
 

@@ -189,8 +189,8 @@ int main(void)
 //***************************************To testify the uart of interrupt************************************************************** */
 			HAL_UART_Transmit(&huart6, "HelloWorld\r\n", 12, 100);
 			HAL_Delay(100);
-      HAL_UART_Transmit(&huart1, "BeginCoding\r\n", 12, 100);
-      HAL_Delay(100);  
+			HAL_UART_Transmit(&huart1, "BeginCoding\r\n", 12, 100);
+			HAL_Delay(100);  
 	
   }
   /* USER CODE END 3 */
