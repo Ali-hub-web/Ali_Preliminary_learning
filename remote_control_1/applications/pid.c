@@ -1,11 +1,11 @@
 /**
   ****************************(C) COPYRIGHT 2019 DJI****************************
   * @file       pid.c/h
-  * @brief      pidå®žçŽ°å‡½æ•°ï¼ŒåŒ…æ‹¬åˆå§‹åŒ–ï¼ŒPIDè®¡ç®—å‡½æ•°ï¼Œ
+  * @brief      pidÊµÏÖº¯Êý£¬°üÀ¨³õÊ¼»¯£¬PID¼ÆËãº¯Êý£¬
   * @note       
   * @history
   *  Version    Date            Author          Modification
-  *  V1.0.0     Dec-26-2018     RM              1. å®Œæˆ
+  *  V1.0.0     Dec-26-2018     RM              1. Íê³É
   *
   @verbatim
   ==============================================================================
@@ -16,8 +16,9 @@
   */
 
 #include "pid.h"
-
-//ç”µæœºè½¬é€Ÿé™åˆ¶
+#include "main.h"
+#include "stdio.h"
+//µç»ú×ªËÙÏÞÖÆ
 #define LimitMax(input, max)   \
     {                          \
         if (input > max)       \
@@ -40,7 +41,19 @@
   * @param[in]      max_iout: pid max iout
   * @retval         none
   */
-
+/**
+  * @brief          pid struct data init
+  * @param[out]     pid: PID½á¹¹Êý¾ÝÖ¸Õë
+  * @param[in]      mode: PID_POSITION:ÆÕÍ¨PIDÎ»ÖÃÊ½ PID¸ÅÄî £ºÎ»ÖÃÊ½ PID ¿ØÖÆÊÇÖ±½Ó¸ù¾Ý¸ø¶¨ÖµÓëÊµ¼ÊÊä³öÖµµÄÆ«²î£¬°´ÕÕÒ»¶¨µÄ PID Ëã·¨À´¼ÆËã³ö¿ØÖÆÁ¿¡£ËüµÄ¿ØÖÆÁ¿µÄ´óÐ¡´ú±íÁË¿ØÖÆÖ´ÐÐ»ú¹¹Ëù´¦µÄÎ»ÖÃ
+  *                 PID_DELTA: ²î·ÖPIDÔöÁ¿Ê½ PID ¿ØÖÆÊÇ¸ù¾Ýµ±Ç°Ê±¿ÌµÄÆ«²î¡¢ÏàÁÚÇ°Á½¸öÊ±¿ÌµÄÆ«²îÀ´¼ÆËã³ö¿ØÖÆÁ¿µÄÔöÁ¿¡£ËüÖ÷ÒªÊÇ¶Ô¿ØÖÆÁ¿µÄ±ä»¯²¿·Ö½øÐÐ¼ÆËã£¬¿ØÖÆÁ¿µÄ¸üÐÂÊÇ»ùÓÚÇ°Ò»´ÎµÄ¿ØÖÆÁ¿¼ÓÉÏÕâ¸öÔöÁ¿
+  * @param[in]      PID: 0: kp, 1: ki, 2:kd
+  * @param[in]      max_out: pid×î´óÊä³ö
+  * @param[in]      max_iout: pid×î´ó»ý·ÖÊä³ö
+  * @retval         none
+  * 
+  * u(n) = Kpe(t) + KiT(e(0) + e(1) + ... + e(n)) + Kd{e(n) - e(n-1)} / T
+  * ¡øu(n) = Kp[e(n) - e(n-1)] + Kie(n) + Kd[e(n) - 2*e(n-1) + e(n-2)]
+  */
 void PID_init(pid_type_def *pid, uint8_t mode, const fp32 PID[3], fp32 max_out, fp32 max_iout)
 {
     if (pid == NULL || PID == NULL)
@@ -64,7 +77,13 @@ void PID_init(pid_type_def *pid, uint8_t mode, const fp32 PID[3], fp32 max_out, 
   * @param[in]      set: set point
   * @retval         pid out
   */
-
+/**
+  * @brief          pid¼ÆËã
+  * @param[out]     pid: PID½á¹¹Êý¾ÝÖ¸Õë
+  * @param[in]      ref: ·´À¡Êý¾Ý
+  * @param[in]      set: Éè¶¨Öµ
+  * @retval         pidÊä³ö
+  */
 fp32 PID_calc(pid_type_def *pid, fp32 ref, fp32 set)
 {
     if (pid == NULL)
@@ -74,29 +93,22 @@ fp32 PID_calc(pid_type_def *pid, fp32 ref, fp32 set)
 
     pid->error[2] = pid->error[1];
     pid->error[1] = pid->error[0];
-    pid->set = set;						//ç›®æ ‡å€¼
-    pid->fdb = ref;						//è¿”å›žå€¼
+    pid->set = set;						//Ä¿±êÖµ
+    pid->fdb = ref;						//·µ»ØÖµ
     pid->error[0] = set - ref;
-    if (pid->mode == PID_POSITION)           //ä½ç½®å¼PID
+    if (pid->mode == PID_POSITION)                //position PID:generally appears in position loop
     {
-        //KP
-        pid->Pout = pid->Kp * pid->error[0];	//æ¯”ä¾‹é¡¹
-
-        //KI
-        pid->Iout += pid->Ki * pid->error[0];	//ç§¯åˆ†é¡¹
-        LimitMax(pid->Iout, pid->max_iout);		//é™åˆ¶ç§¯åˆ†è¾“å‡º**********************************************
-
-        //KD
+        pid->Pout = pid->Kp * pid->error[0];	//±ÈÀýÏî
+        pid->Iout += pid->Ki * pid->error[0];	//»ý·ÖÏî
         pid->Dbuf[2] = pid->Dbuf[1];		
         pid->Dbuf[1] = pid->Dbuf[0];
-        pid->Dbuf[0] = (pid->error[0] - pid->error[1]);	//å¾®åˆ†è½¬å·®åˆ†
-        pid->Dout = pid->Kd * pid->Dbuf[0];		//å¾®åˆ†é¡¹
-
-        //output the final pid 
-        pid->out = pid->Pout + pid->Iout + pid->Dout;
+        pid->Dbuf[0] = (pid->error[0] - pid->error[1]);	//Î¢·Ö×ª²î·Ö
+        pid->Dout = pid->Kd * pid->Dbuf[0];		//Î¢·ÖÏî
+        LimitMax(pid->Iout, pid->max_iout);		//ÏÞÖÆ»ý·ÖÊä³ö:avoid cover the max limit
+        pid->out = pid->Pout + pid->Iout + pid->Dout;  //plus together 
         LimitMax(pid->out, pid->max_out);
     }
-    else if (pid->mode == PID_DELTA)       //å¢žé‡å¼PID
+    else if (pid->mode == PID_DELTA)               //Incremental PID: generally used in speed ring
     {
         pid->Pout = pid->Kp * (pid->error[0] - pid->error[1]);
         pid->Iout = pid->Ki * pid->error[0];
@@ -104,8 +116,8 @@ fp32 PID_calc(pid_type_def *pid, fp32 ref, fp32 set)
         pid->Dbuf[1] = pid->Dbuf[0];
         pid->Dbuf[0] = (pid->error[0] - 2.0f * pid->error[1] + pid->error[2]);
         pid->Dout = pid->Kd * pid->Dbuf[0];
-        pid->out += pid->Pout + pid->Iout + pid->Dout;        
-        LimitMax(pid->out, pid->max_out);       
+        pid->out += pid->Pout + pid->Iout + pid->Dout;   //the sum of ¡øu(n)
+        LimitMax(pid->out, pid->max_out);
     }
     return pid->out;
 //		printf("My PID:%f,%d\n",ref,500);
@@ -117,7 +129,11 @@ fp32 PID_calc(pid_type_def *pid, fp32 ref, fp32 set)
   * @param[out]     pid: PID struct data point
   * @retval         none
   */
-
+/**
+  * @brief          pid Êä³öÇå³ý
+  * @param[out]     pid: PID½á¹¹Êý¾ÝÖ¸Õë
+  * @retval         none
+  */
 void PID_clear(pid_type_def *pid)
 {
     if (pid == NULL)
